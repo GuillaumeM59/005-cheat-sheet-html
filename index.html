@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cheat sheet HTML</title>
+    <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="img/ubuntu.png" alt="logo HTML5" width="50px" height="50px" />
+      <h1>Balises HTML</h1>
+      <p>
+        Les Cheat-Sheet à la Guytou
+      </p>
+    </header>
+    <nav>
+      <ul id="menu">
+        <li> <a href="#synthaxe">Architecture de base</a></li>
+        <li><a href="#terminal">Astuces terminal</a></li>
+        <li><a href="#navigation">Navigation</a></li>
+      </ul>
+    </nav>
+    <article>
+      <section id="synthaxe">
+        <h2>Synthaxe d'un fichier html:</h2>
+          <textarea>
+            <!DOCTYPE html>
+            <html>
+	            <head>
+		            <meta charset="utf-8"/>
+		            <title>montitre</title>
+	            </head>
+	            <body>
+
+	            </body>
+            </html></textarea>
+
+&#60!Doctype html&#62  informe le serveur du type de fichier, ici html.
+&#60html&#62&#60/html&#62 balise indiquant que le contenu html est entre ces deux balises.
+&#60head&#62&#60/head&#62 balise contenant les informations techniques pour le navigateur ( titre, feuille de style, ...).
+&#60title&#62#montitre&#60/title&#62 le navigateur va afficher #montitre sur l'onglet ou la page et dans la recherche google.
+&#60body&#62&#60/body&#62 englobe tout le contenu de ma page (texte, img, paragraphes, titres, ...)
+
+&#60!-- #commentaire --&#62   synthaxe d'un #commentaire, non affiché sur la page.
+
+balises HEAD:
+&#60link rel="steelsheet" href="adresseducss" /&#62 indique au navigateur d'appliquer le fichier .css dans href.
+
+balises BODY:
+&#60p&#62&#60/p&#62 paragraphe.
+&#60br /&#62 dans &#60p&#62&#60/p&#62 renvoie à le ligne.
+&#60h1&#62&#60/h1&#62 definit mon titre et mes sous-titres jusqu'à h6.
+&#60ol&#62&#60/ol&#62 liste numérotée (!voir balise li)
+&#60ul&#62&#60/ul&#62 liste à puces (!voir balise! li )
+&#60li&#62&#60/li&#62 contenu de la puce ou du numéro de la ul ou ol , chaque li ajoute un numero ou une puce à la liste.
+&#60balise id="marquage"&#62&#60/balise&#62 permet de marquer une importance sur la balise (permettant d'y revenir avec un lien par ex). on appele ce 				marquage un ancre
+&#60table&#62&#60/table&#62		crée un tableau.
+&#60caption&#62&#60/caption&#62	titre du tableau.
+&#60thead&#62&#60/thead&#62		indique au nav qu'il s'agit de l'entête du tableau.
+&#60tbody&#62&#60/tbody&#62		indique au nav qu'il s'agit du corp du tableau
+&#60tfoot&#62&#60/tfoot&#62		indique au nav qu'il s'agit du pied du tableau
+
+&#60tr&#62&#60/tr&#62		cree une ligne de tableau.
+&#60th&#62&#60/th&#62		titre de colonne (dans un tr).
+&#60td&#62&#60/td&#62		colonne (dans un tr).
+&#60td colspan="2"&#62		case de 2 colonnes sur la ligne.
+&#60td rowspan="2"&#62		case de 2 colonnes sur la ligne.
+
+
+&#60a&#62 texte &#60/a&#62
+attributs de la balise &#60a&#62
+	href="lienurl"  crée un lien hypertexte sur "texte" ouvrant la page "lienurl".
+	href="fichierdirect"  renvoie vers "fichierdirect" present sur mon stockage.
+	href="#marquage"  renvoie vers l'ancre(id) "marquage" dans votre page (# est ici important).
+	href="mailto:mon@mail"  renvoie ecrire un mail à mon@mail
+	href="adressefichier"  va télécharger le fichier adressefichier quand on clique le lien.
+
+	title="titre"   crée une infobulle quand on passe la souris sur le lien avec titre dedans.
+&#60img src="adresseimage" alt="donnéesprmoteurderech"/&#62 insère une image.
+attributs utiles de img:
+
+&#60figure&#62 &#60img /&#62 &#60figcaption&#62légende&#60/figcaption&#62 &#60/figure&#62  indique au navigateur qu'img est une figure avec une légende.
+
+Structure de page:
+inserer ça pour les noob d'IE inférieur à 9!
+dans <textarea readonly="readonly" wrap="soft"><HEAD> <!--[if lt IE 9]>
+            <script src="http://github.com/aFarkas/html5shiv/blob/master/dist/html5shiv.js"></script>
+        <![endif]--></textarea>
+
+&#60BODY&#62
+&#60header&#62&#60/header&#62
+&#60nav&#62&#60/vav&#62
+&#60section&#62&#60/section&#62
+&#60article&#62&#60/article&#62
+&#60aside&#62&#60/aside&#62
+&#60footer&#62&#60/footer&#62
+
+Multimédia:
+&#60audio controls&#62 		affiche un lecteur audio basique.
+	&#60source src="fichieraudio.mp3"&#62&#60/source&#62	essaie d'abord le.mp3 sinon
+	&#60source src="fichieraudio.flac"&#62&#60/source&#62	essaie le .flac
+	...  &#60/audio&#62
+&#60audio controls poster="captureecran.png"&#62 		affiche un lecteur video basique avec captureecran.png en fond.
+	&#60source src="fichiervideo.ogg"&#62&#60/source&#62	essaie d'abord le.ogg sinon
+	&#60source src="fichiervideo.mp4"&#62&#60/source&#62	essaie le .mp4
+	...  &#60/audio&#62
+
+
+Formulaires:
+&#60form method="post" action="fichierouvalesinfos"&#62 ....   crée un formulaire qui va renvoyer les réponses dans le fichier donné dans action.
+    &#60fieldset&#62 	.....   &#60/fieldset&#62 	déclare une partie du formulaire par fieldset.
+	&#60legend&#62ma légende&#60/legend&#62 &#60/fieldset&#62  ajoute une légende à la partie de formulaire.
+
+	&#60p&#62&#60label for="pseudo"&#62Pseudo&#60/label&#62&#60input type="text" name="pseudo" id="pseudo"/&#62&#60/p&#62 crée un paragraphe avec "Pseudo" et une barre de saisie de texte(type=text) sera enregistré dans le fichier comme "pseudo". id="" renvoie au nom du label crée avant. Input peut aussi contenir:
+				size="6" longueur de la barre de saisie.
+				max-lenght="6" limite le nombre de caractères dans la barre de saisie.
+				placeholder="EX toto"	ecrira "EX toto" en exemple à l'affichage, s'effacera auto lors de la saisie.
+
+	&#60p&#62&#60label for="passe"&#62Mot de passe&#60/label&#62&#60input type="password" name="passe" id="passe"/&#62&#60/p&#62	crée une zone de saisie de mot de passe qui sera enregistré comme passe dans le fichier action.
+		&#60input type="email" ....	zone de saisie reconnue pour email
+		&#60input type="url" ....		zone de saisie reconnue pour adresse net
+		&#60input type="tel" ....		zone de saisie reconnue pour numero de téléphone
+		&#60input type="number" ....	zone de saisie optimisée pour la selection de nombre, max min step en attribut par ex
+		&#60input type="range" ....	affiche une barre pour choisir une proportion.
+		&#60input type="date" ....		zone de saisie optimisée pour saisir une date.
+		&#60input type="color" ....	zone de selection d'une couleur.
+		&#60input type="search" ....	zone de saisie optimùisée pour la recherche.
+		&#60input type="checkbox"  puis &#60label&#62	crée une case cochable, plusieurs input à la suite sont selectionables(ajoutez checked dans l'input pour le selesctioner des le départ).
+		&#60input type="radio" ....	bouton rond selectionnable un seul par "name" dans le input.
+		&#60input type="submit" value="Envoyer"/&#62 crée un bouton "envoyer" qui valisde le formulaire.
+
+	&#60p&#62&#60label for="biographie"&#62Biographie&#60/label&#62&#60textarea name="biographie" id="pseudo"&#62&#60/textarea&#62&#60/p&#62	crée une zonne de texte pour rediger du texte.
+
+	&#60p&#62&#60label for="idname"&#62selectioner parmi&#60/label&#62&#60select name="nomretourné" id="idname"&#62 crée une liste déroulante selectionnable.
+				&#60optgroup label="groupe1"&#62	crée un groupe non selectionnable contenant:
+					&#60option value="valeur1"&#62Valeur1&#60/option&#62	crée une valeur selectionnable.
+					&#60option value="valeur2"&#62Valeur2&#60/option&#62    ...   &#60/optgroup&#62	à repeter comme voulu.
+				...	&#60/select&#62&#60/p&#62
+
+
+&#60/form&#62
+
+html et css:
+
+&#60span&#62mot&#60/span&#62  permet de donner une importance au mot pour notre css.
+&#60div&#62 partie de texte &#60/div&#62 permet de créer un bloc conteneur où l'on appliquera un style spécial dans notre css
+html|css
+&#60balise id="nomdelid"&#62 ......... | #nomdelid {...    applique le style a la balise avec l'attribut id correspondant (utilisable qu'une fois).
+&#60balise class="nomdeclasse"&#62 ......... | .nomdeclasse {...    applique le style a toutes les balises avec l'attribut class nomdeclasse.
+        <h2>Raccourcis généraux</h2>
+        <ul>
+          <li><span>Ctrl + A</span> tout sélectionner.</li>
+          <li><span>Ctrl + C</span> copier.</li>
+          <li><span>Ctrl + V</span> coller.</li>
+          <li><span>Ctrl + N</span> nouveau Document.</li>
+          <li><span>Ctrl + O</span> ouvrir.</li>
+          <li><span>Ctrl + S</span> sauvegarder.</li>
+          <li><span>Ctrl + P</span> imprimer.</li>
+          <li><span>Ctrl + W</span> fermer.</li>
+          <li><span>Ctrl + Q</span> quitte l’application.</li>
+        </ul>
+      </section>
+      <section id="terminal" class="blocpair">
+        <h2>Astuces terminal</h2>
+        <ul>
+          <li><span>Ctrl + Alt + T</span> nouveau Terminal.</li>
+          <li><span>Ctrl + A</span> aller en début de ligne.</li>
+          <li><span>Ctrl + E</span> aller en fin de ligne.</li>
+          <li><span>Ctrl + C</span> arrête le processus en cours.</li>
+          <li><span>Ctrl + R</span> trouve la dernière commande en fonction de la lettre tapée.</li>
+          <li><span>Une lettre, puis Tab + Tab</span> liste les différentes commandes disponible avec la lettre tapée.</li>
+          <li><span>Ctrl + U</span> supprime la ligne tapée.</li>
+          <li><span>Ctrl + K</span> supprime la ligne après le curseur.</li>
+          <li><span>Ctrl + W</span> supprime la ligne avant le curseur.</li>
+          <li><span>Ctrl + L</span> efface le terminal.</li>
+          <li><span>Shift + Ctrl + C</span> copier.</li>
+          <li><span>Shift + Ctrl + V</span> coller.</li>
+        </ul>
+      </section>
+      <section id="navigation">
+        <h2> Navigation </h2>
+        <ul>
+          <li><span>Alt+F4</span> ferme la fenêtre en cours.</li>
+          <li><span>Alt+Tab</span> changer de fenêtre.</li>
+          <li><span>Ctrl+Alt+Shift+Flèches</span> Déplace la fenêtre vers un autre espace de travail.</li>
+          <li><span>Ctrl+Alt+Flèches</span> basculer vers les autres espaces de travail.</li>
+          <li><span>Ctrl+Alt+Suppr</span> se déconnecter.</li>
+          <li><span>Ctrl+windows+D</span> Cache toutes les fenêtres et affiche le bureau. idem pour réafficher.</li>
+          <li><span>Ctrl+Alt+L</span> retour ecran d'identification.</li>
+        </ul>
+      </section>
+    </article>
+  </body>
+</html>
