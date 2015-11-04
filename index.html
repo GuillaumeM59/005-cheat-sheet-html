@@ -7,152 +7,152 @@
   </head>
   <body>
     <header>
-      <img id="logo" src="img/ubuntu.png" alt="logo HTML5" width="50px" height="50px" />
+      <img id="logo" src="img/html5.png" alt="logo HTML5" width="50px" height="50px" />
       <h1>Balises HTML</h1>
-      <p>
-        Les Cheat-Sheet à la Guytou
-      </p>
+      <p>Les Cheat-Sheet à la Guytou</p>
     </header>
     <nav>
       <ul id="menu">
-        <li> <a href="#synthaxe">Architecture de base</a></li>
-        <li><a href="#terminal">Astuces terminal</a></li>
-        <li><a href="#navigation">Navigation</a></li>
+        <li><a href="#synthaxe">Architecture de base</a></li>
+        <li><a href="#structure">Structure de la page</a></li>
+        <li><a href="#texttag">Balises de texte</a></li>
+        <li><a href="#table">Tableau</a></li>
+        <li><a href="#links">Liens</a></li>
+        <li><a href="#imgtag">Images</a></li>
+        <li><a href="#multimedia">Multimedia</a></li>
+        <li><a href="#formular">Formulaire</a></li>
       </ul>
     </nav>
     <article>
       <section id="synthaxe">
         <h2>Synthaxe d'un fichier html:</h2>
+        <p>
           <textarea>
-            <!DOCTYPE html>
-            <html>
-	            <head>
-		            <meta charset="utf-8"/>
-		            <title>montitre</title>
-	            </head>
-	            <body>
-                /*commentaire*/
-	            </body>
-            </html></textarea>
-            <ul>
-              <li><span>&#60!Doctype html&#62  informe le serveur du type de fichier, ici html.</li>
-              <li><span>&#60html&#62&#60/html&#62 balise indiquant que le contenu html est entre ces deux balises.</li>
-              <li><span>&#60head&#62&#60/head&#62 balise contenant les informations techniques pour le navigateur ( titre, feuille de style, ...).</li>
-              <li><span>&#60title&#62#montitre&#60/title&#62 le navigateur va afficher #montitre sur l'onglet ou la page et dans la recherche google.</li>
-              <li><span>&#60body&#62&#60/body&#62 englobe tout le contenu de ma page (texte, img, paragraphes, titres, ...)</li>
-              <li><span>&#60!-- #commentaire --&#62   synthaxe d'un #commentaire, non affiché sur la page.</li>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>montitre</title>
+</head>
+<body>
+  /*commentaire*/
+</body>
+</html></textarea>
+        </p>
+        <ul>  <li><span>&#60!Doctype html&#62</span>  informe le serveur du type de fichier, ici html.</li>
+              <li><span>&#60html&#62&#60/html&#62</span> balise indiquant que le contenu html est entre ces deux balises.</li>
+              <li><span>&#60head&#62&#60/head&#62</span> balise contenant les informations techniques pour le navigateur ( titre, feuille de style, ...).</li>
+              <li><span>&#60title&#62#montitre&#60/title&#62</span> le navigateur va afficher #montitre sur l'onglet ou la page et dans la recherche google.</li>
+              <li><span>&#60body&#62&#60/body&#62</span> englobe tout le contenu de ma page (texte, img, paragraphes, titres, ...)</li>
+              <li><span>!-- #commentaire --!</span>   synthaxe d'un #commentaire, non affiché sur la page.</li>
             </ul>
 
-          <section>
+          <section id="structure">
             <h2>Structurer la page</h2>
-            <ul><li>inserer ça dans HEAD (pour que les noobs d'IE inférieur à 9 puisse comprendre ;) )
+            <ul><li>inserer ça dans HEAD (pour que les noobs d'IE inférieur à 9 puisse le comprendre ;) )<br/>
 <textarea readonly="readonly" wrap="soft"><HEAD> <!--[if lt IE 9]>
 <script src="http://github.com/aFarkas/html5shiv/blob/master/dist/html5shiv.js"></script>
 <![endif]--></textarea></li>
-                  <li><span>&#60Dans BODY:&#62
-                  <ul><li><span>&#60header&#62&#60/header&#62 indique qu'il s'agit de l'entête</li>
-                  <li><span>&#60nav&#62&#60/nav&#62 indique que c'est destiné à la navigation</li>
-                  <li><span>&#60article&#62&#60/article&#62
-                    <ul><li><span>&#60section&#62&#60/section&#62 indique qu'il s'agit d'un article</li>
-                        <li><span>&#60aside&#62&#60/aside&#62</li></ul></li>
-                  <li><span>&#60footer&#62&#60/footer&#62</li>
+                <li>Dans BODY:
+                  <ul><li><span>&#60header&#62&#60/header&#62</span> indique qu'il s'agit de l'entête</li>
+                  <li><span>&#60nav&#62&#60/nav&#62</span> indique que c'est destiné à la navigation</li>
+                  <li><span>&#60article&#62&#60/article&#62</span> indique qu'il s'agit d'un article
+                    <ul><li><span>&#60section&#62&#60/section&#62</span> indique qu'il s'agit d'une section de l'article </li>
+                        <li><span>&#60aside&#62&#60/aside&#62</span> indique que c'est un à coté.</li></ul></li>
+                  <li><span>&#60footer&#62&#60/footer&#62</span> c'est le pied de page</li>
                 </ul>
-
+          <section id="texttag">
                 <h2>balises de texte</h2>
                 <ul>
-                  <li><span>&#60p&#62&#60/p&#62 paragraphe.</li>
-                  <li><span>&#60br /&#62 dans &#60p&#62&#60/p&#62 renvoie à le ligne.</li>
-                  <li><span>&#60h1&#62&#60/h1&#62 definit mon titre et mes sous-titres jusqu'à h6.</li>
-                  <li><span>&#60ol&#62&#60/ol&#62 liste numérotée (!voir balise li!)</li>
-                  <li><span>&#60ul&#62&#60/ul&#62 liste à puces (!voir balise li! )</li>
-                  <li><span>&#60li&#62&#60/li&#62 contenu de la puce ou du numéro de la ul ou ol , chaque li ajoute un numero ou une puce à la liste.</li>
+                  <li><span>&#60p&#62&#60/p&#62</span> paragraphe.</li>
+                  <li><span>&#60br /&#62 dans &#60p&#62&#60/p&#62</span> renvoie à la ligne.</li>
+                  <li><span>&#60h1&#62&#60/h1&#62</span> definit mon titre et mes sous-titres jusqu'à h6.</li>
+                  <li><span>&#60ol&#62&#60/ol&#62</span> liste numérotée (!voir balise li!)</li>
+                  <li><span>&#60ul&#62&#60/ul&#62</span> liste à puces (!voir balise li! )</li>
+                  <li><span>&#60li&#62&#60/li&#62</span> contenu de la puce ou du numéro de la ul ou ol , chaque li ajoute un numero ou une puce à la liste.</li>
                 </ul>
-
+          </section>
+          <section id="table">
                 <h2>faire un tableau</h2>
                 <ul>
-                  <li><span>&#60table&#62&#60/table&#62		crée un tableau.</li>
-                  <li><span>&#60caption&#62&#60/caption&#62	titre du tableau.</li>
-                  <li><span>&#60thead&#62&#60/thead&#62		indique au nav qu'il s'agit de l'entête du tableau.</li>
-                  <li><span>&#60tbody&#62&#60/tbody&#62		indique au nav qu'il s'agit du corp du tableau</li>
-                  <li><span>&#60tfoot&#62&#60/tfoot&#62		indique au nav qu'il s'agit du pied du tableau</li>
-                  <li><span>&#60tr&#62&#60/tr&#62		cree une ligne de tableau.
-                  <ul><li><span>&#60th&#62&#60/th&#62		titre de colonne (dans un tr).</li>
-                      <li><span>&#60td&#62&#60/td&#62		colonne (dans un tr).
-                          <ul><li><span>&#60td colspan="2"&#62		case de 2 colonnes sur la ligne.</li>
-                              <li><span>&#60td rowspan="2"&#62		case de 2 lignes sur la colonne.</li></ul></li></ul></li>
+                  <li><span>&#60table&#62&#60/table&#62</span> crée un tableau.</li>
+                  <li><span>&#60caption&#62&#60/caption&#62</span>	titre du tableau.</li>
+                  <li><span>&#60thead&#62&#60/thead&#62</span>	indique au nav qu'il s'agit de l'entête du tableau.</li>
+                  <li><span>&#60tbody&#62&#60/tbody&#62</span>	indique au nav qu'il s'agit du corp du tableau</li>
+                  <li><span>&#60tfoot&#62&#60/tfoot&#62</span>	indique au nav qu'il s'agit du pied du tableau</li>
+                  <li><span>&#60tr&#62&#60/tr&#62</span> cree une ligne de tableau.
+                  <ul><li><span>&#60th&#62&#60/th&#62</span> titre de colonne (dans un tr).</li>
+                      <li><span>&#60td&#62&#60/td&#62</span> colonne (dans un tr).
+                          <ul><li><span>&#60td colspan="2"&#62</span> case de 2 colonnes sur la ligne.</li>
+                              <li><span>&#60td rowspan="2"&#62</span> case de 2 lignes sur la colonne.</li></ul></li></ul></li>
                 </ul>
-
-
-          <section>
-
-                <h2>Créer des liens</h2>
+          </section>
+          <section id="links">
+            <h2>Créer des liens</h2>
                 <ul>
-                    <li><span>&#60a&#62texte&#60/a&#62 crée un lien sur texte.</li>
-                    <li>attributs de &#60a&#62
-                    <ul>
-                      <li>href="lienurl"  crée un lien hypertexte sur "texte" ouvrant la page "lienurl".</li>
-                      <li>href="fichierdirect"  renvoie vers "fichierdirect" present sur mon stockage.</li>
-                      <li>href="#marquage"  renvoie vers l'ancre(id) "marquage" dans votre page (# est ici important).</li>
-                      <li>href="mailto:mon@mail"  renvoie ecrire un mail à mon@mail</li>
-                      <li>href="adressefichier"  va télécharger le fichier adressefichier quand on clique le lien.</li>
-                      <li>title="titre"   crée une infobulle quand on passe la souris sur le lien avec titre dedans.</li></ul></li>
-                    <li>&#60balise id="marquage"&#62&#60/balise&#62 permet de marquer une importance sur la balise (permettant d'y revenir avec un lien par ex). on appele ce marquage un ancre</li>
+                    <li><span>&#60a&#62texte&#60/a&#62</span> crée un lien sur texte.</li>
+                    <li>attributs de &#60a&#62:
+                    <ul><li><span>href="lienurl"</span>  crée un lien hypertexte sur "texte" ouvrant la page "lienurl".</li>
+                        <li><span>href="fichierdirect"</span> renvoie vers "fichierdirect" present sur mon stockage.</li>
+                        <li><span>href="#marquage"</span> renvoie vers l'ancre(id) "marquage" dans votre page (# est ici important).</li>
+                        <li><span>href="mailto:mon@mail"</span> renvoie ecrire un mail à mon@mail</li>
+                        <li><span>href="adressefichier"</span> va télécharger le fichier adressefichier quand on clique le lien.</li>
+                        <li><span>title="titre"</span> crée une infobulle quand on passe la souris sur le lien avec titre dedans.</li></ul></li>
+                    <li><span>&#60balise id="marquage"&#62&#60/balise&#62</span> permet de marquer une importance sur la balise (permettant d'y revenir avec un lien par ex). on appele ce marquage un ancre</li>
                 </ul>
           </section>
-          <section>
-
+          <section id="imgtag">
                     <h2>attributs utiles de img</h2>
-                    <li>&#60img ... /&#62 on insère une image, on DOIT ajouter les attributs comme ceci:</li>
-                    <ul><li>&#60img src="adresseimage" alt="donnéesprmoteurderech"/&#62 insère une image.</li></ul>
-                    <li>&#60figure&#62 &#60img /&#62 &#60figcaption&#62légende&#60/figcaption&#62 &#60/figure&#62  indique au navigateur qu'img est une figure avec une légende.</li>
+                    <li><span>&#60img ... /&#62</span> on insère une image, on DOIT ajouter les attributs comme ceci:</li>
+                    <ul><li><span>&#60img src="adresseimage" alt="donnéesprmoteurderech"/&#62</span> insère une image.</li></ul>
+                    <li><span>&#60figure&#62&#60img ... /&#62&#60figcaption&#62légende&#60/figcaption&#62 &#60/figure&#62</span>  indique au navigateur qu'img est une figure avec une légende.</li>
           </section>
-
-          <section>
+          <section id="multimedia">
                     <h2>Multimédia</h2>
-                    <ul>
-                      <li>&#60audio controls&#62 		affiche un lecteur audio basique (controls affiche une barre avec les contrôles).
-                      <ul><li>&#60source src="fichieraudio.mp3"&#62&#60/source&#62	essaie d'abord le.mp3 sinon</li>
-                          <li>&#60source src="fichieraudio.flac"&#62&#60/source&#62	essaie le .flac</li></ul></li>
-                      <li>...  &#60/audio&#62 ferme la balise audio</li>
-                      <li>&#60video controls poster="captureecran.png"&#62 		affiche un lecteur video basique avec captureecran.png en fond.
-                      <ul><li>&#60source src="fichiervideo.ogg"&#62&#60/source&#62	essaie d'abord le.ogg sinon</li>
-                          <li>&#60source src="fichiervideo.mp4"&#62&#60/source&#62	essaie le .mp4</li></ul></li>
-                      <li>...  &#60/video&#62 ferme la balise video</li>
+                    <ul><li><span>&#60audio controls&#62</span> affiche un lecteur audio basique (controls affiche une barre avec les contrôles).
+                        <ul><li><span>&#60source src="fichieraudio.mp3"&#62&#60/source&#62</span>	essaie d'abord le.mp3 sinon</li>
+                            <li><span>&#60source src="fichieraudio.flac"&#62&#60/source&#62</span>	puis essaie le .flac</li></ul></li>
+                        <li><span>...  &#60/audio&#62</span> ferme la balise audio</li>
+                        <li><span>&#60video controls poster="captureecran.png"&#62</span>	affiche un lecteur video basique avec captureecran.png en fond.
+                        <ul><li><span>&#60source src="fichiervideo.ogg"&#62&#60/source&#62</span>	essaie d'abord le.ogg sinon</li>
+                            <li><span>&#60source src="fichiervideo.mp4"&#62&#60/source&#62</span>	essaie le .mp4</li></ul></li>
+                        <li><span>...  &#60/video&#62</span> ferme la balise video</li>
                     </ul>
           </section>
-          <section>
-                    <h2>Formulaires</h2>
+          <section id="formular">
+              <h2>Formulaires</h2>
                     <ul>
-                      <li>&#60form method="post" action="fichierouvalesinfos"&#62 ....   crée un formulaire qui va renvoyer les réponses dans le fichier donné dans action.</li>
-                      <li>&#60fieldset&#62 	.....   &#60/fieldset&#62 	déclare une partie du formulaire par fieldset.</li>
-                      <li>&#60legend&#62ma légende&#60/legend&#62 &#60/fieldset&#62  ajoute une légende à la partie de formulaire.</li>
-                      <li>&#60p&#62&#60label for="pseudo"&#62Pseudo&#60/label&#62&#60input type="text" name="pseudo" id="pseudo"/&#62&#60/p&#62 crée un paragraphe avec "Pseudo" et une barre de saisie de texte(type=text) sera enregistré dans le fichier comme "pseudo". id="" renvoie au nom du label crée avant.</li>
+                      <li><span>&#60form method="post" action="fichieroùvalesinfos"&#62 ....</span>   crée un formulaire qui va renvoyer les réponses dans le fichier donné dans action.</li>
+                      <li><span>&#60fieldset&#62 	.....   &#60/fieldset&#62</span> 	déclare une partie du formulaire par fieldset.</li>
+                      <li><span>&#60legend&#62ma légende&#60/legend&#62 &#60/fieldset&#62</span>  ajoute une légende à la partie de formulaire.</li>
+                      <li><span>&#60p&#62&#60label for="pseudo"&#62Pseudo&#60/label&#62&#60input type="text" name="pseudo" id="pseudo"/&#62&#60/p&#62</span> crée un paragraphe avec "Pseudo" et une barre de saisie de texte(type=text) sera enregistré dans le fichier comme "pseudo". id="" renvoie au nom du label crée avant.</li>
                       <li>Input peut aussi contenir:
-                        <ul><li>size="6" longueur de la barre de saisie.</li>
-                            <li>max-lenght="6" limite le nombre de caractères dans la barre de saisie.</li>
-                            <li>placeholder="EX toto"	ecrira "EX toto" en exemple à l'affichage, s'effacera auto lors de la saisie.</li></li>
-                            <li>&#60p&#62&#60label for="passe"&#62Mot de passe&#60/label&#62&#60input type="password" name="passe" id="passe"/&#62&#60/p&#62	crée une zone de saisie de mot de passe qui sera enregistré comme passe dans le fichier action.</li></ul></li>
-                      <li>Différents type de input:
-                        <ul><li>&#60input type="email" ....	zone de saisie reconnue pour email</li>
-                            <li>&#60input type="url" ....		zone de saisie reconnue pour adresse net</li>
-                            <li>&#60input type="tel" ....		zone de saisie reconnue pour numero de téléphone</li>
-                            <li>&#60input type="number" ....	zone de saisie optimisée pour la selection de nombre, max min step en attribut par ex</li>
-                            <li>&#60input type="range" ....	affiche une barre pour choisir une proportion.</li>
-                            <li>&#60input type="date" ....		zone de saisie optimisée pour saisir une date.</li>
-                            <li>&#60input type="color" ....	zone de selection d'une couleur.</li>
-                            <li>&#60input type="search" ....	zone de saisie optimùisée pour la recherche.</li>
-                            <li>&#60input type="checkbox"  puis &#60label&#62	crée une case cochable, plusieurs input à la suite sont selectionables(ajoutez checked dans l'input pour le selesctioner des le départ).</li>
-                            <li>&#60input type="radio" ....	bouton rond selectionnable un seul par "name" dans le input.</li>
-                            <li>&#60input type="submit" value="Envoyer"/&#62 crée un bouton "envoyer" qui valisde le formulaire.</li>
-                            <li>&#60p&#62&#60label for="biographie"&#62Biographie&#60/label&#62&#60textarea name="biographie" id="pseudo"&#62&#60/textarea&#62&#60/p&#62	crée une zonne de texte pour rediger du texte.</li></ul></li>
-                            <li>&#60p&#62&#60label for="idname"&#62selectioner parmi&#60/label&#62&#60select name="nomretourné" id="idname"&#62 crée une liste déroulante selectionnable.
-                            <ul><li>&#60optgroup label="groupe1"&#62	crée un groupe non selectionnable contenant:
-                                <ul><li>&#60option value="valeur1"&#62Valeur1&#60/option&#62	crée une valeur selectionnable.</li>
-                                    <li>&#60option value="valeur2"&#62Valeur2&#60/option&#62</li>
-                                    <li>...&#60/optgroup&#62	à repeter comme voulu.</li></ul></li>
-                            <li>...	&#60/select&#62&#60/p&#62</li></ul></li>
-                        <li>&#60/form&#62</li>
+                        <ul><li><span>size="6"</span> longueur de la barre de saisie.</li>
+                            <li><span>max-lenght="6"</span> limite le nombre de caractères dans la barre de saisie.</li>
+                            <li><span>placeholder="EX toto"</span>	ecrira "EX toto" en exemple à l'affichage, s'effacera auto lors de la saisie.</li></li>
+                            <li><span>&#60p&#62&#60label for="passe"&#62Mot de passe&#60/label&#62&#60input type="password" name="passe" id="passe"/&#62&#60/p&#62</span> crée une zone de saisie de mot de passe qui sera enregistré comme passe dans le fichier action.</li></ul></li>
+                      <li>Différents types de input:
+                        <ul><li><span>&#60input type="email" ....</span>	zone de saisie reconnue pour email</li>
+                            <li><span>&#60input type="url" ....</span>	zone de saisie reconnue pour adresse net</li>
+                            <li><span>&#60input type="tel" ....</span>	zone de saisie reconnue pour numero de téléphone</li>
+                            <li><span>&#60input type="number" ....</span>	zone de saisie optimisée pour la selection de nombre, max min step en attribut par ex</li>
+                            <li><span>&#60input type="range" ....</span> affiche une barre pour choisir une proportion.</li>
+                            <li><span>&#60input type="date" ....</span>	zone de saisie optimisée pour saisir une date.</li>
+                            <li><span>&#60input type="color" ....</span>	zone de selection d'une couleur.</li>
+                            <li><span>&#60input type="search" ....</span>	zone de saisie optimùisée pour la recherche.</li>
+                            <li><span>&#60input type="checkbox"</span>  puis <span>&#60label&#62</span>	crée une case cochable, plusieurs input à la suite sont selectionables(ajoutez checked dans l'input pour le selesctioner des le départ).</li>
+                            <li><span>&#60input type="radio"</span> ....	bouton rond selectionnable un seul par "name" dans le input.</li>
+                            <li><span>&#60p&#62&#60label for="biographie"&#62Biographie&#60/label&#62&#60textarea name="biographie" id="pseudo"&#62&#60/textarea&#62&#60/p&#62</span>	crée une zonne de texte pour rediger du texte.</li>
+                            <li><span>&#60input type="submit" value="Envoyer"/&#62</span> crée un bouton "envoyer" qui valisde le formulaire.</li></ul></li>
+                            <li><span>&#60p&#62&#60label for="idname"&#62selectioner parmi&#60/label&#62&#60select name="nomretourné" id="idname"&#62</span> crée une liste déroulante selectionnable.
+                            <ul><li><span>&#60optgroup label="groupe1"&#62</span>	crée un groupe non selectionnable contenant:
+                                <ul><li><span>&#60option value="valeur1"&#62Valeur1&#60/option&#62</span>	crée une valeur selectionnable.</li>
+                                    <li><span>&#60option value="valeur2"&#62Valeur2&#60/option&#62</span> une seconde</li>
+                                    <li><span>... &#60/optgroup&#62</span>	à repeter comme voulu.</li></ul></li>
+                            <li><span>...	&#60/select&#62&#60/p&#62</span></li></ul></li>
+                        <li><span>&#60/form&#62</span> ferme la balise formulaire.</li>
                       </ul>
           </section>
+        </article>
   </body>
 </html>
