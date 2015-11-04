@@ -4,9 +4,11 @@ body {padding-left: 2% auto;}
 header { display: block; width: 100%;height: 20%; background-image:url('../img/backheader.png');background-repeat: no-repeat; background-size: 100%;}
 #langage {display: inline-block;max-width: 25%;
             }
-          header div {display: inline-block }
+
           #langage img {display: block; width: 20%; height: 20%; margin-left: 20%; margin-top: 5%;}
           #langage h1 {display: block; margin-left: 10%;;}
+          #guytou {display: inline-block;width: 70%;}
+          #guytou p{display:block; width: auto;text-align: right; vertical-align: center;}
 /*navigation menu*/
 nav{    height: 10%;
     width: 90%;
