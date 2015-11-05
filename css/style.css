@@ -1,38 +1,33 @@
 /*general page style*/
 body {padding-left: 2% auto;background-color: black;}
+ul {display: block;margin: auto;}
+h2 {text-align: center;margin-top: 0; margin-bottom: 0;}
 /*header style*/
-header { display: block; width: 100%; background-image:url('../img/backheader.png');background-repeat: no-repeat; background-size: 100%;}
-#langage {display: inline-block;width: 20%;}
+header { display: block; width: 100%; background-image:url('../img/backheader.png');background-repeat: no-repeat; background-size: 100%;
+border-radius: 20px;}
+#langage {display: inline-block;width: 15%;}
 #langage img {display: block; width: 20%; height: 20%; margin:auto; margin-top: 5%;}
 #langage h1 {text-align: center; font-size: 0.8em;}
 #guytou {display: inline-block; width: 70%;}
 #guytou p {text-align: right;}
-ul {display: block;margin: auto;}
-section ul {list-style-type: none;}
-h2 {text-align: center;margin-top: 0; margin-bottom: 0;}
-h2 a {display: block; margin-left: 0 auto; margin-top: 2%; margin-bottom: 2%;}
+h2 a {display: block; margin-left: 0 auto; margin-top: 1%; margin-bottom: 1%;}
 /*navigation menu*/
-nav{    height: 10%;
-    width: 90%;
-    font-size: 1.2em;
-    margin: auto;
-    background-color: cyan;
-    border: 2px solid black;
-    border-radius: 10px 10px 10px 10px;
-    }
-    #menu{
+nav{width: 90%;font-size: 1.2em;background-color: cyan;
+    margin: auto;border: 2px solid black;border-radius: 10px 10px 10px 10px;}
+    nav ul { margin-top: 0;margin-bottom: 0;}
+  #menu{
        display: table;
        width: 100%;
-       margin: 2% auto;
+       margin-left: 2% auto;
        padding: 0;
        background-color: red;
      }
      #menu li {display: table-cell;}
 /*blocs section*/
-section h2 a {text-decoration: none;margin: auto;}
 section { display: block; background-color: #FEF6FF; width: 40%; margin: auto; border: 2px solid black; border-left: dotted; border-right: dotted; border-radius: 10px;
         transition: border 1s ease-out 0s, width 1s ease-out 0s;}
-section ul { display:none;
+section h2 a {text-decoration: none;}
+section ul { display:none;list-style-type: none;
 transition: display 0 ease-out 3s;}
 
         section:target{border: 3px solid white;  width: 90%; margin: auto;}
