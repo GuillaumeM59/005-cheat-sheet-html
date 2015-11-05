@@ -1,12 +1,16 @@
 /*general page style*/
-body {padding-left: 2% auto;}
+body {padding-left: 2% auto;background-color: black;}
 /*header style*/
 header { display: block; width: 100%; background-image:url('../img/backheader.png');background-repeat: no-repeat; background-size: 100%;}
 #langage {display: inline-block;width: 20%;}
 #langage img {display: block; width: 20%; height: 20%; margin:auto; margin-top: 5%;}
 #langage h1 {text-align: center; font-size: 0.8em;}
 #guytou {display: inline-block; width: 70%;}
-#guytou p{display:block; width: auto;text-align: right; vertical-align: center;}
+#guytou p {text-align: right;}
+ul {display: block;margin: auto;}
+section ul {list-style-type: none;}
+h2 {text-align: center;margin-top: 0; margin-bottom: 0;}
+h2 a {display: block; margin-left: 0 auto; margin-top: 2%; margin-bottom: 2%;}
 /*navigation menu*/
 nav{    height: 10%;
     width: 90%;
@@ -25,6 +29,11 @@ nav{    height: 10%;
      }
      #menu li {display: table-cell;}
 /*blocs section*/
-section{ display: block; width: 90%; margin: auto; border: 2px solid black;
-        transition: border 2s ease-in-out 0 ;}
-        section:hover {border: 5px solid red;}
+section h2 a {text-decoration: none;margin: auto;}
+section { display: block; background-color: #FEF6FF; width: 40%; margin: auto; border: 2px solid black; border-left: dotted; border-right: dotted; border-radius: 10px;
+        transition: border 1s ease-out 0s, width 1s ease-out 0s;}
+section ul { display:none;
+transition: display 0 ease-out 3s;}
+
+        section:target{border: 3px solid white;  width: 90%; margin: auto;}
+        section:target ul{display: block;}
