@@ -43,7 +43,7 @@ transition: display 0 ease-out 3s;}
         section:target ul{display: block;}
 #structure ul li textarea {height: 4em;}
 
-@media all and (max-width:600px) {
+@media all and (max-device-width:600px) {
   section {width: 90%; border: none;padding-bottom: 1%;}
   section ul {display:block; transition: none;width: 90%; border: none;}
 
