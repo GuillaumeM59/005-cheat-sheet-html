@@ -55,6 +55,6 @@ transition: display 0 ease-out 3s;}
   section {width: 100%; border: none;padding-bottom: 1%;margin: 0;}
   section ul {display:block; transition: none; border: none; margin-left: 0;}
   section ul li ul, section ul li ul li ul  {margin-left: -3%;}
-  section span{display: inline-block; max-width: 100%;}
+  section span{display: inline; max-width: 80%;}
 
 }
