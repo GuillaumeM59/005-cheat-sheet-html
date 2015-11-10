@@ -43,8 +43,9 @@ transition: display 0 ease-out 3s;}
         section:target ul{display: block;}
 #structure ul li textarea {height: 4em;}
 
-@media all and (max-device-width:600px) {
+@media all and (max-width:600px) {
   /* header*/
+  header {width: 60%; margin: auto;}
   #guytou {display: none;}
   #language {display: block;}
   #language img {width: 40%; height: auto;}
