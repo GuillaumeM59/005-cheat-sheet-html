@@ -1,5 +1,5 @@
 /*general page style*/
-body {padding-left: 2% auto;background-color: black;}
+body {padding-left: 0 auto;background-color: black;}
 ul {display: block;margin: auto;}
 h2 {text-align: center;margin-top: 0; margin-bottom: 0;}
 textarea { color: white; background-color: black;
@@ -23,14 +23,14 @@ nav{width: 99%;font-size: 1.2em;
     nav ul li a {text-decoration: none; color: rgb(1, 0, 59);font-size: 1.2em;}
 
   #menu{
-       display: table;
+       display: inline-block;
        width: 100%;
        margin-left: 2% auto;
        padding: 1%;
        border-radius: 5px;
 
      }
-     #menu li {display: table-cell; background-color: rgb(142, 200, 255); padding: 1%; border-radius: 15%;}
+     #menu li {display: inline-block; background-color: rgb(142, 200, 255); padding: 0.5%; border-radius: 15%;}
 /*blocs section*/
 section { display: block; background-color: #FEF6FF; width: 40%; margin: auto; border: 2px solid black; border-left: dotted; border-right: dotted; border-radius: 10px;
         transition: border 1s ease-out 0s, width 1s ease-out 0s;}
