@@ -52,5 +52,6 @@ transition: display 0 ease-out 3s;}
   article{ width: 100%;margin: 0; float:none;}
   section {width: 100%; border: none;padding-bottom: 1%;margin: 0;}
   section ul {display:block; transition: none; border: none;}
+  section ul li ul, section ul li ul li ul  {padding-left: 0;}
 
 }
