@@ -47,9 +47,9 @@ transition: display 0 ease-out 3s;}
   section {width: 98%; border: none;padding-bottom: 1%;margin: 0;}
   section ul {display:block; transition: none;width: 100%; border: none;}
   header {display: block; margin-bottom: 2%; height:10%;margin-top: 25%;background: none;}
-  #langage img {display: block;position: absolute; top: 0; left: 0;width:300%;text-align: center;}
+  #langage img {display: block;position: absolute; top: 0; left: 0;width:30%;text-align: center;}
   #guytou {display: none;}
   #langage {display: inline-block; margin: auto;float: none;color:#FEF6FF;}
-  nav {display:block;position: fixed; top: 0; left: 0;width:90%;}
+  nav {display:inline-block;position: fixed; top: 0; left: 0;width:90%;}
 
 }
