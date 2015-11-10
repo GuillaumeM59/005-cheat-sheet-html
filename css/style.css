@@ -46,8 +46,8 @@ transition: display 0 ease-out 3s;}
 @media all and (max-device-width:600px) {
   section {width: 98%; border: none;padding-bottom: 1%;margin: 0;}
   section ul {display:block; transition: none;width: 100%; border: none;}
-  header {display: block; margin:auto; height:10%;margin-top: 10%;background: none;}
-  #langage img {display: block; width:300%;text-align: center;}
+  header {display: block; margin-bottom: 10%; height:10%;margin-top: 10%;background: none;}
+  #langage img {display: block;position: absolute; top: 0; left: 0;width:300%;text-align: center;}
   #guytou {display: none;}
   #langage {display: inline-block; margin: auto;float: none;color:#FEF6FF;}
   nav {display:block;position: fixed; top: 0; left: 0;width:100%;}
