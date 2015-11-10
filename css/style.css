@@ -47,7 +47,7 @@ transition: display 0 ease-out 3s;}
   section {width: 98%; border: none;padding-bottom: 1%;margin: 0;}
   section ul {display:block; transition: none;width: 100%; border: none;}
   header {display: block; width: 40%; margin:auto; height:10%;margin-top: 10%;}
-  #langage img {display: block; width:50%;margin: auto;}
+  #langage img {display: block; width:100%;margin: auto;}
   #guytou {display: none;}
   #langage {display: inline-block; margin: auto;float: none;}
   nav {display:block;position: fixed; top: 0; left: 0;}
