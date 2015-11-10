@@ -35,6 +35,8 @@ nav{width: 99%;font-size: 1.2em;
 section { display: block; background-color: #FEF6FF; width: 40%; margin: auto; border: 2px solid black; border-left: dotted; border-right: dotted; border-radius: 10px;
         transition: border 1s ease-out 0s, width 1s ease-out 0s;}
 section h2 a {text-decoration: none;}
+
+
 section ul { display:none;list-style-type: none;
 
 transition: display 0 ease-out 3s;}
@@ -52,6 +54,6 @@ transition: display 0 ease-out 3s;}
   article{ width: 100%;margin: 0; float:none;}
   section {width: 100%; border: none;padding-bottom: 1%;margin: 0;}
   section ul {display:block; transition: none; border: none;}
-  section ul li ul, section ul li ul li ul  {padding-left: 0;}
+  section ul li ul, section ul li ul li ul  {margin-left: -3%;}
 
 }
