@@ -51,5 +51,6 @@ transition: display 0 ease-out 3s;}
   #guytou {display: none;}
   #langage {display: inline-block; margin: auto;float: none;color:#FEF6FF;}
   nav {display:inline-block;position: fixed; top: 0; left: 0;width:90%;}
+  article{ width: 100%;}
 
 }
