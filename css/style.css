@@ -53,9 +53,9 @@ transition: display 0 ease-out 3s;}
   #langage {display: inline-block; margin: auto;float: none;color:#FEF6FF;}
   article{ display: block; width: 100%;margin: 0; float:none;}
   section { display: block;width: 100%; border: none;padding-bottom: 1%;margin: 0;}
-  section ul {display:block; transition: none; border: none; margin-left: 0;}
+  section ul {display:block; transition: none; border: none; margin-left: -2%;}
   section li {display: block;}
   section ul li ul, section ul li ul li ul  {margin-left: -3%;}
-  section span{display: inline; max-width: 80%;}
+  section span{display: block; max-width: 80%;}
 
 }
