@@ -1,61 +1,8 @@
-/*general page style*/
-body {padding-left: 0 auto;background-color: black;}
-ul {display: block;margin: auto;}
-h2 {text-align: center;margin-top: 0; margin-bottom: 0;}
-textarea { color: white; background-color: black;
-  border: 1px solid black;
-      width: 80%; height:13em;padding-bottom: 1%;}
-span { color: rgb(9, 245, 252); background-color: rgb(36, 24, 71); border: 1px solid rgb(9, 245, 252); border-radius: 5% 0 0 5%;}
 /*header style*/
-header { display: block; width: 100%; background-image:url('../img/backheader.png');background-repeat: no-repeat; background-size: 100%;
-border-radius: 20px;}
-#langage {display: inline-block;width: 15%;}
-#langage img {display: block; width: 20%; height: 20%; margin:auto; margin-top: 5%;}
-#langage h1 {text-align: center; font-size: 0.8em;}
-#guytou {display: inline-block; width: 70%;}
-#guytou p {text-align: right;}
-h2 a {display: block; margin-left: 0 auto; margin-top: 1%; margin-bottom: 1%;}
-/*navigation menu*/
-nav{width: 99%;font-size: 1.2em;
-    border-radius: 10px 10px 10px 10px;}
-    nav ul { margin-top: 0;margin-bottom: 0;text-align: center; margin-right: 0;}
-    nav ul li {padding-left: 0;}
-    nav ul li a {text-decoration: none; color: rgb(1, 0, 59);font-size: 1.2em;}
+#logo { width: 35%; height:35%;padding-top: 2%;}
+#logo p {font-family: 'Share tech', sans-serif;font-size: 2em; display: block; vertical-align: center;}
+h1 {font-family: 'Satisfy',cursive !important;
+    font-weight: 700;margin-top: 15%!important;}
 
-  #menu{
-       display: inline-block;
-       width: 100%;
-       margin-left: 2% auto;
-       padding: 1%;
-       border-radius: 5px;
-
-     }
-     #menu li {display: inline-block; background-color: rgb(142, 200, 255); padding: 0.5%;margin-bottom: 2px;border-radius: 15%;}
-/*blocs section*/
-section { display: block; background-color: #FEF6FF; width: 40%; margin: auto; border: 2px solid black; border-left: dotted; border-right: dotted; border-radius: 10px;
-        transition: border 1s ease-out 0s, width 1s ease-out 0s;}
-section h2 a {text-decoration: none;}
-
-
-section ul { display:none;list-style-type: none;
-
-transition: display 0 ease-out 3s;}
-
-        section:target{border: 3px solid white;  width: 98%; margin: auto;}
-        section:target ul{display: block;}
-#structure ul li textarea {height: 4em;}
-
-@media all and (max-device-width:600px) {
-  nav {display:inline-block;position: fixed; top: 0; left: auto;width:100%;}
-  header {display: block; margin-bottom: 2%; height:10%;margin-top: 30%;background: none;}
-  #langage img {display: none;}
-  #guytou {display: none;}
-  #langage {display: inline-block; margin: auto;float: none;color:#FEF6FF;}
-  article{ display: block; width: 100%;margin: 0; float:none;}
-  section { display: block;width: 100%; border: none;padding-bottom: 1%;margin: 0;}
-  section ul {display:block; transition: none; border: none; margin-left: -2%;}
-  section li {display: block;}
-  section ul li ul, section ul li ul li ul  {margin-left: -3%;}
-  section span{display: inline-block;word-wrap: break-word;max-width: 80%;}
-
-}
+header h2 {font-size: 3em;}
+ul li {text-decoration: none !important;}
