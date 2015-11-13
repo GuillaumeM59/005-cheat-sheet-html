@@ -1,3 +1,4 @@
+body {font-weight: 500; font-size: 1.5em;}
 #logo { width: 35%; height:35%;padding-top: 2%;}
 #logo p {font-family: 'Share tech', sans-serif;font-size: 2em; display: block; vertical-align: center;}
 h1 {font-family: 'Satisfy',cursive !important;
@@ -5,3 +6,9 @@ h1 {font-family: 'Satisfy',cursive !important;
 
 header h2 {font-size: 3em;}
 ul li {text-decoration: none !important;}
+
+/*mise en forme navbar*/
+.navbar-default {
+          background-image:linear-gradient ( toright, rgb(255, 188, 110), rgb(255, 255, 255));
+          background-image:-moz-linear-gradient(left, rgb(255, 188, 110), rgb(255, 255, 255));
+        font-size: 1.2em;}

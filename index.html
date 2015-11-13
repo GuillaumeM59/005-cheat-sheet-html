@@ -23,7 +23,9 @@
 
 </head>
 
-<body class="container">
+
+
+<body class="container"><!--center content with margin left and right-->
 
   <header class="row">
     <div id="logo" class="col-lg-5 col-md-6 visible-md visible-lg center-block">
@@ -37,21 +39,20 @@
   <!-- header logo + title-->
 
 
-  <nav class="navbar navbar-default row">
+  <nav class="navbar navbar-default row ">
 
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse"><i class="fa fa-reorder"></i></button>
     </div>
     <!--create nav button in responsive-->
 
-    <div class="collapse navbar-collapse" id="collapse">
+    <div class="collapse navbar-collapse navbar-jutify" id="collapse">
 
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav ">
         <li><a href="#synthaxe">Entête</a></li>
         <li><a href="#structure">Structure</a></li>
         <li><a href="#texttag">Texte</a></li>
         <li><a href="#table">Tableau</a></li>
-        <li><a href="#links">Liens</a></li>
         <li><a href="#imgtag">Images</a></li>
         <li><a href="#multimedia">Multimedia</a></li>
         <li><a href="#formular">Formulaire</a></li>
@@ -65,7 +66,7 @@
 
 
   <section class="row" >
-    <aside class="col-lg-3 col-md-3 visible-lg visible-md">
+    <aside class="col-lg-1 col-md-1 visible-lg visible-md">
       <ul class="list-unstyled nav-pills">
         <li><a href="">&lt;html&gt;</a></li>
         <li><a href="">&lt;head&gt;</a></li>
@@ -76,7 +77,7 @@
       </ul>
     </aside><!--left tags buttons-->
 
-    <section id="synthaxe" class="col-lg-9 col-md-9">
+    <section id="synthaxe" class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
       <h2>Synthaxe d'un fichier html:</h2>
       <ul class="list-unstyled">
         <li>
@@ -103,8 +104,18 @@
 
   <section class="row">
 
+    <aside class="col-lg-1 col-md-1 visible-lg visible-md">
+      <ul class="list-unstyled nav-pills">
+        <li><a href="">&lt;html&gt;</a></li>
+        <li><a href="">&lt;head&gt;</a></li>
+        <li><a href="">&lt;title&gt;</a></li>
+        <li><a href="">&lt;body&gt;</a></li>
+        <li>
+          <a href=""></a>Commentaire</li>
+      </ul>
+    </aside><!--left tags buttons-->
 
-    <section id="structure">
+    <section id="structure" class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
       <h2><a href="#structure">Structurer la page</a>
       </h2>
       <ul class="list-unstyled">
@@ -136,7 +147,21 @@
 
 
 
-  <section id="texttag">
+  <section id="texttag" class="row">
+    <aside class="col-lg-1 col-md-1 visible-lg visible-md">
+      <ul class="list-unstyled nav-pills">
+        <li><a href="">&lt;html&gt;</a></li>
+        <li><a href="">&lt;head&gt;</a></li>
+        <li><a href="">&lt;title&gt;</a></li>
+        <li><a href="">&lt;body&gt;</a></li>
+        <li>
+          <a href=""></a>Commentaire</li>
+      </ul>
+    </aside><!--left tags buttons-->
+
+
+    <section class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+
     <h2>Balises de texte</h2>
     <ul class="list-unstyled">
       <li>
@@ -151,9 +176,45 @@
         <code>&lt;ul&gt;&lt;/ul&gt;</code> liste à puces (!voir balise li! )</li>
       <li>
         <code>&lt;li&gt;&lt;/li&gt;</code> contenu de la puce ou du numéro de la ul ou ol , chaque li ajoute un numero ou une puce à la liste.</li>
+      <li>
+        <code>&lt;a&gt;texte&lt;/a&gt;</code> crée un lien sur texte.</li>
+      <li>attributs de &lt;a&gt;:
+        <ul class="list-unstyled">
+          <li>
+            <code>href="lienurl"</code> crée un lien hypertexte sur "texte" ouvrant la page "lienurl".</li>
+          <li>
+            <code>href="fichierdirect"</code> renvoie vers "fichierdirect" present sur mon stockage.</li>
+          <li>
+            <code>href="#marquage"</code> renvoie vers l'ancre(id) "marquage" dans votre page (# est ici important).</li>
+          <li>
+            <code>href="mailto:mon@mail"</code> renvoie ecrire un mail à mon@mail</li>
+          <li>
+            <code>href="adressefichier"</code> va télécharger le fichier adressefichier quand on clique le lien.</li>
+          <li>
+            <code>title="titre"</code> crée une infobulle quand on passe la souris sur le lien avec titre dedans.</li>
+        </ul>
+      </li>
+      <li>
+        <code>&lt;balise id="marquage"&gt;&lt;/balise&gt;</code> permet de marquer une importance sur la balise (permettant d'y revenir avec un lien par ex). on appele ce marquage un ancre</li>
     </ul>
-  </section>
+    </section>
+  </section><!-- text and links-->
+
+
   <section id="table">
+
+    <aside class="col-lg-1 col-md-1 visible-lg visible-md">
+      <ul class="list-unstyled nav-pills">
+        <li><a href="">&lt;html&gt;</a></li>
+        <li><a href="">&lt;head&gt;</a></li>
+        <li><a href="">&lt;title&gt;</a></li>
+        <li><a href="">&lt;body&gt;</a></li>
+        <li>
+          <a href=""></a>Commentaire</li>
+      </ul>
+    </aside><!--left tags buttons-->
+
+    <section class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
     <h2>Faire un tableau</h2>
     <ul class="list-unstyled">
       <li>
@@ -183,33 +244,15 @@
         </ul>
       </li>
     </ul>
-  </section>
-  <section id="links">
-    <h2>Créer des liens</h2>
-    <ul class="list-unstyled">
-      <li>
-        <code>&lt;a&gt;texte&lt;/a&gt;</code> crée un lien sur texte.</li>
-      <li>attributs de &lt;a&gt;:
-        <ul class="list-unstyled">
-          <li>
-            <code>href="lienurl"</code> crée un lien hypertexte sur "texte" ouvrant la page "lienurl".</li>
-          <li>
-            <code>href="fichierdirect"</code> renvoie vers "fichierdirect" present sur mon stockage.</li>
-          <li>
-            <code>href="#marquage"</code> renvoie vers l'ancre(id) "marquage" dans votre page (# est ici important).</li>
-          <li>
-            <code>href="mailto:mon@mail"</code> renvoie ecrire un mail à mon@mail</li>
-          <li>
-            <code>href="adressefichier"</code> va télécharger le fichier adressefichier quand on clique le lien.</li>
-          <li>
-            <code>title="titre"</code> crée une infobulle quand on passe la souris sur le lien avec titre dedans.</li>
-        </ul>
-      </li>
-      <li>
-        <code>&lt;balise id="marquage"&gt;&lt;/balise&gt;</code> permet de marquer une importance sur la balise (permettant d'y revenir avec un lien par ex). on appele ce marquage un ancre</li>
-    </ul>
-  </section>
+    </section>
+  </section> <!--table section-->
+
+
+
   <section id="imgtag">
+
+
+    
     <h2>Attributs utiles de img</h2>
     <ul class="list-unstyled">
       <li>
@@ -249,7 +292,10 @@
       <li>
         <code>... &lt;/video&gt;</code> ferme la balise video</li>
     </ul>
-  </section>
+  </section><!--medias tags-->
+
+
+
   <section id="formular">
     <h2><a href="#formular">Formulaires</a></h2>
     <ul class="list-unstyled">
@@ -327,8 +373,10 @@
       <li>
         <code>&lt;/form&gt;</code> ferme la balise formulaire.</li>
     </ul>
-  </section>
+  </section><!--form tags-->
 
+
+<!--js librairys -->
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 </body>
