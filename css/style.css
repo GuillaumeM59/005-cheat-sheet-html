@@ -18,6 +18,10 @@ ul li {text-decoration: none !important;}
 
 
 /* aside styling part*/
-aside, aside ul  {text-align: center;}
-aside ul {display: block;}
 aside i {color: rgb(224, 81, 0)}
+aside, aside ul  {text-align: center;}
+aside li { margin-top: 1%; font-weight: 600;}
+
+
+/* textarea*/
+#structure textarea {width: 90%; background-color: white; height:6em;}
