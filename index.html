@@ -25,14 +25,15 @@
 
 
 
-<body class="container"><!--center content with margin left and right-->
+<body class="container">
+  <!--center content with margin left and right-->
 
   <header class="row">
     <div id="logo" class="col-lg-5 col-md-6 visible-md visible-lg center-block">
       <img id="logo" class="img-responsive img-thumbnail center-block" src="img/logoHTML5.png" alt="logo HTML5">
       <p class="text-center">HTML</p>
     </div>
-    <div id="titre" class="col-lg-6 col-lg-offset-1 col-md-6 col-sd-12 text-center">
+    <div id="titre" class="col-lg-6  col-md-6 col-sd-12 text-center">
       <h1>Les Cheat-Sheet à la Guytou</h1>
     </div>
   </header>
@@ -49,12 +50,10 @@
     <div class="collapse navbar-collapse navbar-jutify" id="collapse">
 
       <ul class="nav navbar-nav ">
-        <li><a href="#synthaxe">Entête</a></li>
         <li><a href="#structure">Structure</a></li>
         <li><a href="#texttag">Texte</a></li>
         <li><a href="#table">Tableau</a></li>
-        <li><a href="#imgtag">Images</a></li>
-        <li><a href="#multimedia">Multimedia</a></li>
+        <li><a href="#medias">Multimedia</a></li>
         <li><a href="#formular">Formulaire</a></li>
       </ul>
     </div>
@@ -65,20 +64,27 @@
   <!-- main navbar-->
 
 
-  <section class="row" >
-    <aside class="col-lg-1 col-md-1 visible-lg visible-md">
-      <ul class="list-unstyled nav-pills">
-        <li><a href="">&lt;html&gt;</a></li>
-        <li><a href="">&lt;head&gt;</a></li>
-        <li><a href="">&lt;title&gt;</a></li>
-        <li><a href="">&lt;body&gt;</a></li>
-        <li>
-          <a href=""></a>Commentaire</li>
+  <section id="structure" class="row">
+    <aside class="col-lg-2 col-md-2 visible-lg visible-md">
+      <i class="fa fa-html5 fa-3x fa-border"></i>
+      <ul class="list-unstyled ">
+        <li>&lt;html&gt;</li>
+        <li>&lt;head&gt;</li>
+        <li>&lt;title&gt;</li>
+        <li>&lt;body&gt;</li>
+        <li>Commentaire</li>
+        <li>&lt;header&gt;</li>
+        <li>&lt;nav&gt;</li>
+        <li>&lt;article&gt;</li>
+        <li>&lt;section&gt;</li>
+        <li>&lt;aside&gt;</li>
+        <li>&lt;footer&gt;</li>
       </ul>
-    </aside><!--left tags buttons-->
+    </aside>
+    <!--left tags buttons-->
 
-    <section id="synthaxe" class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
-      <h2>Synthaxe d'un fichier html:</h2>
+    <section id="content" class="col-lg-10 col-md-10">
+      <h2><i class="fa fa-file-code-o fa-2x"></i> Synthaxe d'un fichier html:</h2>
       <ul class="list-unstyled">
         <li>
           <textarea>&lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset="utf-8"/&gt; &lt;title&gt;montitre&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;!--commentaire--&gt; &lt;/body&gt; &lt;/html&gt;
@@ -96,30 +102,7 @@
           <code>&lt;body&gt;&lt;/body&gt;</code> englobe tout le contenu de ma page (texte, img, paragraphes, titres, ...)</li>
         <li>
           <code>!-- #commentaire --!</code> synthaxe d'un #commentaire, non affiché sur la page.</li>
-      </ul>
-    </section>
-  </section>
-  <!--html HEAD row-->
-
-
-  <section class="row">
-
-    <aside class="col-lg-1 col-md-1 visible-lg visible-md">
-      <ul class="list-unstyled nav-pills">
-        <li><a href="">&lt;html&gt;</a></li>
-        <li><a href="">&lt;head&gt;</a></li>
-        <li><a href="">&lt;title&gt;</a></li>
-        <li><a href="">&lt;body&gt;</a></li>
-        <li>
-          <a href=""></a>Commentaire</li>
-      </ul>
-    </aside><!--left tags buttons-->
-
-    <section id="structure" class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
-      <h2><a href="#structure">Structurer la page</a>
-      </h2>
-      <ul class="list-unstyled">
-        <li>inserer ça dans HEAD (pour que les noobs d'IE inférieur à 9 puisse le comprendre ;) )
+        <li>inserer ça dans HEAD (pour que les IE inférieurs à 9 puisse le comprendre ;) )
           <br>
           <textarea readonly="readonly" wrap="soft">&lt;HEAD&gt; &lt;!--[if lt IE 9]&gt; &lt;script src="http://github.com/aFarkas/html5shiv/blob/master/dist/html5shiv.js"&gt;&lt;/script&gt; &lt;![endif]--&gt;
           </textarea>
@@ -143,13 +126,16 @@
               <code>&lt;footer&gt;&lt;/footer&gt;</code> c'est le pied de page</li>
           </ul>
     </section>
-  </section><!--semantic tags for html structure-->
+  </section>
+  <!-- doctype and semantic tags for html structure-->
 
 
 
   <section id="texttag" class="row">
-    <aside class="col-lg-1 col-md-1 visible-lg visible-md">
-      <ul class="list-unstyled nav-pills">
+
+    <aside class="col-lg-2 col-md-2 visible-lg visible-md">
+    <i class="fa fa-html5 fa-3x fa-border"></i>
+      <ul class="list-unstyled ">
         <li><a href="">&lt;html&gt;</a></li>
         <li><a href="">&lt;head&gt;</a></li>
         <li><a href="">&lt;title&gt;</a></li>
@@ -157,54 +143,56 @@
         <li>
           <a href=""></a>Commentaire</li>
       </ul>
-    </aside><!--left tags buttons-->
+    </aside>
+    <!--left tags buttons-->
 
 
-    <section class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+    <section class="col-lg-10  col-md-10 ">
 
-    <h2>Balises de texte</h2>
-    <ul class="list-unstyled">
-      <li>
-        <code>&lt;p&gt;&lt;/p&gt;</code> paragraphe.</li>
-      <li>
-        <code>&lt;br /&gt; dans &lt;p&gt;&lt;/p&gt;</code> renvoie à la ligne.</li>
-      <li>
-        <code>&lt;h1&gt;&lt;/h1&gt;</code> definit mon titre et mes sous-titres jusqu'à h6.</li>
-      <li>
-        <code>&lt;ol&gt;&lt;/ol&gt;</code> liste numérotée (!voir balise li!)</li>
-      <li>
-        <code>&lt;ul&gt;&lt;/ul&gt;</code> liste à puces (!voir balise li! )</li>
-      <li>
-        <code>&lt;li&gt;&lt;/li&gt;</code> contenu de la puce ou du numéro de la ul ou ol , chaque li ajoute un numero ou une puce à la liste.</li>
-      <li>
-        <code>&lt;a&gt;texte&lt;/a&gt;</code> crée un lien sur texte.</li>
-      <li>attributs de &lt;a&gt;:
-        <ul class="list-unstyled">
-          <li>
-            <code>href="lienurl"</code> crée un lien hypertexte sur "texte" ouvrant la page "lienurl".</li>
-          <li>
-            <code>href="fichierdirect"</code> renvoie vers "fichierdirect" present sur mon stockage.</li>
-          <li>
-            <code>href="#marquage"</code> renvoie vers l'ancre(id) "marquage" dans votre page (# est ici important).</li>
-          <li>
-            <code>href="mailto:mon@mail"</code> renvoie ecrire un mail à mon@mail</li>
-          <li>
-            <code>href="adressefichier"</code> va télécharger le fichier adressefichier quand on clique le lien.</li>
-          <li>
-            <code>title="titre"</code> crée une infobulle quand on passe la souris sur le lien avec titre dedans.</li>
-        </ul>
-      </li>
-      <li>
-        <code>&lt;balise id="marquage"&gt;&lt;/balise&gt;</code> permet de marquer une importance sur la balise (permettant d'y revenir avec un lien par ex). on appele ce marquage un ancre</li>
-    </ul>
+      <h2><i class="fa fa-file-word-o fa-2x"></i> Balises de texte</h2>
+      <ul class="list-unstyled">
+        <li>
+          <code>&lt;p&gt;&lt;/p&gt;</code> paragraphe.</li>
+        <li>
+          <code>&lt;br /&gt; dans &lt;p&gt;&lt;/p&gt;</code> renvoie à la ligne.</li>
+        <li>
+          <code>&lt;h1&gt;&lt;/h1&gt;</code> definit mon titre et mes sous-titres jusqu'à h6.</li>
+        <li>
+          <code>&lt;ol&gt;&lt;/ol&gt;</code> liste numérotée (!voir balise li!)</li>
+        <li>
+          <code>&lt;ul&gt;&lt;/ul&gt;</code> liste à puces (!voir balise li! )</li>
+        <li>
+          <code>&lt;li&gt;&lt;/li&gt;</code> contenu de la puce ou du numéro de la ul ou ol , chaque li ajoute un numero ou une puce à la liste.</li>
+        <li>
+          <code>&lt;a&gt;texte&lt;/a&gt;</code> crée un lien sur texte.</li>
+        <li>attributs de &lt;a&gt;:
+          <ul class="list-unstyled">
+            <li>
+              <code>href="lienurl"</code> crée un lien hypertexte sur "texte" ouvrant la page "lienurl".</li>
+            <li>
+              <code>href="fichierdirect"</code> renvoie vers "fichierdirect" present sur mon stockage.</li>
+            <li>
+              <code>href="#marquage"</code> renvoie vers l'ancre(id) "marquage" dans votre page (# est ici important).</li>
+            <li>
+              <code>href="mailto:mon@mail"</code> renvoie ecrire un mail à mon@mail</li>
+            <li>
+              <code>href="adressefichier"</code> va télécharger le fichier adressefichier quand on clique le lien.</li>
+            <li>
+              <code>title="titre"</code> crée une infobulle quand on passe la souris sur le lien avec titre dedans.</li>
+          </ul>
+        </li>
+        <li>
+          <code>&lt;balise id="marquage"&gt;&lt;/balise&gt;</code> permet de marquer une importance sur la balise (permettant d'y revenir avec un lien par ex). on appele ce marquage un ancre</li>
+      </ul>
     </section>
-  </section><!-- text and links-->
+  </section>
+  <!-- text and links-->
 
 
-  <section id="table">
-
-    <aside class="col-lg-1 col-md-1 visible-lg visible-md">
-      <ul class="list-unstyled nav-pills">
+  <section id="table" class="row">
+    <aside class="col-lg-2 col-md-2 visible-lg visible-md">
+    <i class="fa fa-html5 fa-3x fa-border"></i>
+      <ul class="list-unstyled ">
         <li><a href="">&lt;html&gt;</a></li>
         <li><a href="">&lt;head&gt;</a></li>
         <li><a href="">&lt;title&gt;</a></li>
@@ -212,171 +200,196 @@
         <li>
           <a href=""></a>Commentaire</li>
       </ul>
-    </aside><!--left tags buttons-->
+    </aside>
+    <!--left tags buttons-->
 
-    <section class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
-    <h2>Faire un tableau</h2>
-    <ul class="list-unstyled">
-      <li>
-        <code>&lt;table&gt;&lt;/table&gt;</code> crée un tableau.</li>
-      <li>
-        <code>&lt;caption&gt;&lt;/caption&gt;</code> titre du tableau.</li>
-      <li>
-        <code>&lt;thead&gt;&lt;/thead&gt;</code> indique au nav qu'il s'agit de l'entête du tableau.</li>
-      <li>
-        <code>&lt;tbody&gt;&lt;/tbody&gt;</code> indique au nav qu'il s'agit du corp du tableau</li>
-      <li>
-        <code>&lt;tfoot&gt;&lt;/tfoot&gt;</code> indique au nav qu'il s'agit du pied du tableau</li>
-      <li>
-        <code>&lt;tr&gt;&lt;/tr&gt;</code> cree une ligne de tableau.
-        <ul class="list-unstyled">
-          <li>
-            <code>&lt;th&gt;&lt;/th&gt;</code> titre de colonne (dans un tr).</li>
-          <li>
-            <code>&lt;td&gt;&lt;/td&gt;</code> colonne (dans un tr).
-            <ul class="list-unstyled">
+    <section id="content" class="col-lg-10  col-md-10 ">
+      <h2><span class="fa-stack ">
+        <i class="fa fa-table fa-stack-1x"></i>
+        <i class="fa fa-file-o fa-stack-2x"></i>
+      </span><!--fontawesome formular--> Faire un tableau</h2>
+        <!--fontawesome formular-->
+      <ul class="list-unstyled">
+        <li>
+          <code>&lt;table&gt;&lt;/table&gt;</code> crée un tableau.</li>
+        <li>
+          <code>&lt;caption&gt;&lt;/caption&gt;</code> titre du tableau.</li>
+        <li>
+          <code>&lt;thead&gt;&lt;/thead&gt;</code> indique au nav qu'il s'agit de l'entête du tableau.</li>
+        <li>
+          <code>&lt;tbody&gt;&lt;/tbody&gt;</code> indique au nav qu'il s'agit du corp du tableau</li>
+        <li>
+          <code>&lt;tfoot&gt;&lt;/tfoot&gt;</code> indique au nav qu'il s'agit du pied du tableau</li>
+        <li>
+          <code>&lt;tr&gt;&lt;/tr&gt;</code> cree une ligne de tableau.
+          <ul class="list-unstyled">
+            <li>
+              <code>&lt;th&gt;&lt;/th&gt;</code> titre de colonne (dans un tr).</li>
+            <li>
               <li>
-                <code>&lt;td colcode="2"&gt;</code> case de 2 colonnes sur la ligne.</li>
+                <code>&lt;td&gt;&lt;/td&gt;</code> colonne (dans un tr).
+                <ul class="list-unstyled">
+                  <code>&lt;td colcode="2"&gt;</code> case de 2 colonnes sur la ligne.</li>
               <li>
                 <code>&lt;td rowcode="2"&gt;</code> case de 2 lignes sur la colonne.</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </section>
-  </section> <!--table section-->
-
-
-
-  <section id="imgtag">
-
-
-    
-    <h2>Attributs utiles de img</h2>
-    <ul class="list-unstyled">
-      <li>
-        <code>&lt;img ... /&gt;</code> on insère une image, on DOIT ajouter les attributs comme ceci:
-        <ul class="list-unstyled">
-          <li>
-            <code>&lt;img src="adresseimage" alt="donnéesprmoteurderech"/&gt;</code> insère une image.</li>
-        </ul>
-        <li>
-          <code>&lt;figure&gt;&lt;img ... /&gt;&lt;figcaption&gt;légende&lt;/figcaption&gt; &lt;/figure&gt;</code> indique au navigateur qu'img est une figure avec une légende.</li>
-    </ul>
-    </li>
   </section>
-  <section id="multimedia">
-    <h2>Multimédia</h2>
-    <ul class="list-unstyled">
-      <li>
-        <code>&lt;audio controls&gt;</code> affiche un lecteur audio basique (controls affiche une barre avec les contrôles).
-        <ul class="list-unstyled">
-          <li>
-            <code>&lt;source src="fichieraudio.mp3"&gt;&lt;/source&gt;</code> essaie d'abord le.mp3 sinon</li>
-          <li>
-            <code>&lt;source src="fichieraudio.flac"&gt;&lt;/source&gt;</code> puis essaie le .flac</li>
-        </ul>
-      </li>
-      <li>
-        <code>... &lt;/audio&gt;</code> ferme la balise audio</li>
-      <li>
-        <code>&lt;video controls poster="captureecran.png"&gt;</code> affiche un lecteur video basique avec captureecran.png en fond.
-        <ul class="list-unstyled">
-          <li>
-            <code>&lt;source src="fichiervideo.ogg"&gt;&lt;/source&gt;</code> essaie d'abord le.ogg sinon</li>
-          <li>
-            <code>&lt;source src="fichiervideo.mp4"&gt;&lt;/source&gt;</code> essaie le .mp4</li>
-        </ul>
-      </li>
-      <li>
-        <code>... &lt;/video&gt;</code> ferme la balise video</li>
-    </ul>
-  </section><!--medias tags-->
+  <!--table section-->
 
 
 
-  <section id="formular">
-    <h2><a href="#formular">Formulaires</a></h2>
-    <ul class="list-unstyled">
-      <li>
-        <code>&lt;form method="post" action="fichieroùvalesinfos"&gt; ....</code> crée un formulaire qui va renvoyer les réponses dans le fichier donné dans action.</li>
-      <li>
-        <code>&lt;fieldset&gt; ..... &lt;/fieldset&gt;</code> déclare une partie du formulaire par fieldset.</li>
-      <li>
-        <code>&lt;legend&gt;ma légende&lt;/legend&gt; &lt;/fieldset&gt;</code> ajoute une légende à la partie de formulaire.</li>
-      <li>
-        <code>&lt;p&gt;&lt;label for="pseudo"&gt;Pseudo&lt;/label&gt;&lt;input type="text" name="pseudo" id="pseudo"/&gt;&lt;/p&gt;</code>
-        crée un paragraphe avec "Pseudo" et une barre de saisie de texte(type=text) sera enregistré dans le fichier comme "pseudo". id="" renvoie au nom du label crée avant.</li>
-      <li>Input peut aussi contenir:
-        <ul class="list-unstyled">
+  <section id="medias" class="row">
+    <aside class="col-lg-2 col-md-2 visible-lg visible-md">
+    <i class="fa fa-html5 fa-3x fa-border"></i>
+      <ul class="list-unstyled ">
+        <li><a href="">&lt;html&gt;</a></li>
+        <li><a href="">&lt;head&gt;</a></li>
+        <li><a href="">&lt;title&gt;</a></li>
+        <li><a href="">&lt;body&gt;</a></li>
+        <li>
+          <a href=""></a>Commentaire</li>
+      </ul>
+    </aside>
+    <!--left tags buttons-->
+
+    <section id="content" class="col-lg-10  col-md-10 ">
+
+      <h2><i class="fa fa-file-image-o fa-2x"></i> Multimédia</h2>
+      <ul class="list-unstyled">
+        <li>
+          <code>&lt;img ... /&gt;</code> on insère une image, on DOIT ajouter les attributs comme ceci:
+          <ul class="list-unstyled">
+            <li>
+              <code>&lt;img src="adresseimage" alt="donnéesprmoteurderech"/&gt;</code> insère une image.</li>
+          </ul>
           <li>
-            <code>size="6"</code> longueur de la barre de saisie.</li>
+            <code>&lt;figure&gt;&lt;img ... /&gt;&lt;figcaption&gt;légende&lt;/figcaption&gt; &lt;/figure&gt;</code> indique au navigateur qu'img est une figure avec une légende.</li>
           <li>
-            <code>max-lenght="6"</code> limite le nombre de caractères dans la barre de saisie.</li>
-          <li>
-            <code>placeholder="EX toto"</code> ecrira "EX toto" en exemple à l'affichage, s'effacera auto lors de la saisie.</li>
-          <li>
-            <code>&lt;p&gt;&lt;label for="passe"&gt;Mot de passe&lt;/label&gt;&lt;input type="password" name="passe" id="passe"/&gt;&lt;/p&gt;</code> crée une zone de saisie de mot de passe qui sera enregistré comme passe dans le fichier action.</li>
-        </ul>
-      </li>
-      <li>Différents types de input:
-        <ul class="list-unstyled">
-          <li>
-            <code>&lt;input type="email" ....</code> zone de saisie reconnue pour email</li>
-          <li>
-            <code>&lt;input type="url" ....</code> zone de saisie reconnue pour adresse net</li>
-          <li>
-            <code>&lt;input type="tel" ....</code> zone de saisie reconnue pour numero de téléphone</li>
-          <li>
-            <code>&lt;input type="number" ....</code> zone de saisie optimisée pour la selection de nombre, max min step en attribut par ex</li>
-          <li>
-            <code>&lt;input type="range" ....</code> affiche une barre pour choisir une proportion.</li>
-          <li>
-            <code>&lt;input type="date" ....</code> zone de saisie optimisée pour saisir une date.</li>
-          <li>
-            <code>&lt;input type="color" ....</code> zone de selection d'une couleur.</li>
-          <li>
-            <code>&lt;input type="search" ....</code> zone de saisie optimùisée pour la recherche.</li>
-          <li>
-            <code>&lt;input type="checkbox"</code> puis
-            <code>&lt;label&gt;</code>
-            crée une case cochable, plusieurs input à la suite sont selectionables(ajoutez checked dans l'input pour le selesctioner des le départ).
-          </li>
-          <li>
-            <code>&lt;input type="radio"</code> .... bouton rond selectionnable un seul par "name" dans le input.</li>
-          <li>
-            <code>&lt;p&gt;&lt;label for="biographie"&gt;Biographie&lt;/label&gt;&lt;textarea name="biographie" id="pseudo"&gt;&lt;/textarea&gt;&lt;/p&gt;</code> crée une zonne de texte pour rediger du texte.</li>
-          <li>
-            <code>&lt;input type="submit" value="Envoyer"/&gt;</code> crée un bouton "envoyer" qui valisde le formulaire.</li>
-        </ul>
-      </li>
-      <li>
-        <code>&lt;p&gt;&lt;label for="idname"&gt;selectioner parmi&lt;/label&gt;&lt;select name="nomretourné" id="idname"&gt;</code> crée une liste déroulante selectionnable.
-        <ul class="list-unstyled">
-          <li>
-            <code>&lt;optgroup label="groupe1"&gt;</code> crée un groupe non selectionnable contenant:
+            <code>&lt;audio controls&gt;</code> affiche un lecteur audio basique (controls affiche une barre avec les contrôles).
             <ul class="list-unstyled">
               <li>
-                <code>&lt;option value="valeur1"&gt;Valeur1&lt;/option&gt;</code> crée une valeur selectionnable.</li>
+                <code>&lt;source src="fichieraudio.mp3"&gt;&lt;/source&gt;</code> essaie d'abord le.mp3 sinon</li>
               <li>
-                <code>&lt;option value="valeur2"&gt;Valeur2&lt;/option&gt;</code> une seconde</li>
-              <li>
-                <code>... &lt;/optgroup&gt;</code> à repeter comme voulu.</li>
+                <code>&lt;source src="fichieraudio.flac"&gt;&lt;/source&gt;</code> puis essaie le .flac</li>
             </ul>
           </li>
           <li>
-            <code>... &lt;/select&gt;&lt;/p&gt;</code>
+            <code>... &lt;/audio&gt;</code> ferme la balise audio</li>
+          <li>
+            <code>&lt;video controls poster="captureecran.png"&gt;</code> affiche un lecteur video basique avec captureecran.png en fond.
+            <ul class="list-unstyled">
+              <li>
+                <code>&lt;source src="fichiervideo.ogg"&gt;&lt;/source&gt;</code> essaie d'abord le.ogg sinon</li>
+              <li>
+                <code>&lt;source src="fichiervideo.mp4"&gt;&lt;/source&gt;</code> essaie le .mp4</li>
+            </ul>
           </li>
-        </ul>
+          <li>
+            <code>... &lt;/video&gt;</code> ferme la balise video</li>
+      </ul>
       </li>
-      <li>
-        <code>&lt;/form&gt;</code> ferme la balise formulaire.</li>
-    </ul>
-  </section><!--form tags-->
+    </section>
+  </section>
+  <!--medias tags-->
 
 
-<!--js librairys -->
+
+
+  <section id="formular" class="row">
+    <aside class="col-lg-2 col-md-2 visible-lg visible-md">
+      <i class="fa fa-html5 fa-3x fa-border" ></i>
+      <ul class="list-unstyled ">
+        <li><a href="">&lt;html&gt;</a></li>
+        <li><a href="">&lt;head&gt;</a></li>
+        <li><a href="">&lt;title&gt;</a></li>
+        <li><a href="">&lt;body&gt;</a></li>
+        <li>
+          <a href=""></a>Commentaire</li>
+      </ul>
+    </aside>
+    <!--left tags buttons-->
+
+
+    <section id="content" class="col-lg-10  col-md-10 ">
+
+      <h2>      <span class="fa-stack fa-1x">
+              <i class="fa fa-file-o fa-stack-2x"></i>
+              <i class="fa fa-list-alt fa-stack-1x"></i>
+            </span> Formulaires</h2>
+            <!--fontawesome formular-->
+      <ul class="list-unstyled">
+        <li>
+          <code>&lt;form method="post" action="fichieroùvalesinfos"&gt; ....</code> crée un formulaire qui va renvoyer les réponses dans le fichier donné dans action.</li>
+        <li>
+          <code>&lt;fieldset&gt; ..... &lt;/fieldset&gt;</code> déclare une partie du formulaire par fieldset.</li>
+        <li>
+          <code>&lt;legend&gt;ma légende&lt;/legend&gt; &lt;/fieldset&gt;</code> ajoute une légende à la partie de formulaire.</li>
+        <li>
+          <code>&lt;p&gt;&lt;label for="pseudo"&gt;Pseudo&lt;/label&gt;&lt;input type="text" name="pseudo" id="pseudo"/&gt;&lt;/p&gt;</code>
+          crée un paragraphe avec "Pseudo" et une barre de saisie de texte(type=text) sera enregistré dans le fichier comme "pseudo". id="" renvoie au nom du label crée avant.</li>
+        <li>Input peut aussi contenir:
+          <ul class="list-unstyled">
+            <li>
+              <code>size="6"</code> longueur de la barre de saisie.</li>
+            <li>
+              <code>max-lenght="6"</code> limite le nombre de caractères dans la barre de saisie.</li>
+            <li>
+              <code>placeholder="EX toto"</code> ecrira "EX toto" en exemple à l'affichage, s'effacera auto lors de la saisie.</li>
+            <li>
+              <code>&lt;p&gt;&lt;label for="passe"&gt;Mot de passe&lt;/label&gt;&lt;input type="password" name="passe" id="passe"/&gt;&lt;/p&gt;</code> crée une zone de saisie de mot de passe qui sera enregistré comme passe dans le fichier action.</li>
+          </ul>
+        </li>
+        <li>Différents types de input:
+          <ul class="list-unstyled">
+            <li>
+              <code>&lt;input type="email" ....</code> zone de saisie reconnue pour email</li>
+            <li>
+              <code>&lt;input type="url" ....</code> zone de saisie reconnue pour adresse net</li>
+            <li>
+              <code>&lt;input type="tel" ....</code> zone de saisie reconnue pour numero de téléphone</li>
+            <li>
+              <code>&lt;input type="number" ....</code> zone de saisie optimisée pour la selection de nombre, max min step en attribut par ex</li>
+            <li><code>&lt;input type="range" ....</code> affiche une barre pour choisir une proportion.</li>
+            <li><code>&lt;input type="date" ....</code> zone de saisie optimisée pour saisir une date.</li>
+            <li><code>&lt;input type="color" ....</code> zone de selection d'une couleur.</li>
+            <li><code>&lt;input type="search" ....</code> zone de saisie optimùisée pour la recherche.</li>
+            <li><code>&lt;input type="checkbox"</code> puis
+              <code>&lt;label&gt;</code>
+              crée une case cochable, plusieurs input à la suite sont selectionables(ajoutez checked dans l'input pour le selesctioner des le départ).
+            </li>
+            <li><code>&lt;input type="radio"</code> .... bouton rond selectionnable un seul par "name" dans le input.</li>
+            <li><code>&lt;p&gt;&lt;label for="biographie"&gt;Biographie&lt;/label&gt;&lt;textarea name="biographie" id="pseudo"&gt;&lt;/textarea&gt;&lt;/p&gt;</code> crée une zonne de texte pour rediger du texte.</li>
+            <li><code>&lt;input type="submit" value="Envoyer"/&gt;</code> crée un bouton "envoyer" qui valisde le formulaire.</li>
+          </ul>
+        </li>
+        <li><code>&lt;p&gt;&lt;label for="idname"&gt;selectioner parmi&lt;/label&gt;&lt;select name="nomretourné" id="idname"&gt;</code> crée une liste déroulante selectionnable.
+          <ul class="list-unstyled">
+            <li><code>&lt;optgroup label="groupe1"&gt;</code> crée un groupe non selectionnable contenant:
+              <ul class="list-unstyled">
+                <li><code>&lt;option value="valeur1"&gt;Valeur1&lt;/option&gt;</code> crée une valeur selectionnable.</li>
+                <li><code>&lt;option value="valeur2"&gt;Valeur2&lt;/option&gt;</code> une seconde</li>
+                <li><code>... &lt;/optgroup&gt;</code> à repeter comme voulu.</li>
+              </ul>
+            </li>
+            <li>
+              <code>... &lt;/select&gt;&lt;/p&gt;</code>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <code>&lt;/form&gt;</code> ferme la balise formulaire.</li>
+      </ul>
+    </section>
+  </section>
+  <!--form tags-->
+
+
+  <!--js librairys -->
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 </body>
