@@ -37,6 +37,11 @@ aside li { margin-top: 1%; font-weight: 600;}
 footer .fixed {position: fixed; bottom:10px; left:10px;}
 footer .gotop a { text-decoration: none; color: rgb(153, 153, 153);}
 
+/*footer style*/
+footer {background-image:linear-gradient(rgb(255, 255, 255), rgb(255, 216, 171)); border-radius: 10% 10% 0 0;}
+footer p { line-height: 5em;}
+footer a {text-decoration: none; color:rgb(77, 77, 77);}
+.fa-twitter-square {color:rgb(68, 219, 212)}
 
 /*media queries sreen >991px*/
 @media all and (min-width:991px){
