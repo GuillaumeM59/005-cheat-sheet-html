@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
@@ -29,12 +29,12 @@
   <!--center content with margin left and right-->
 
   <header class="row">
-    <div id="logo" class="col-lg-5 col-md-6 visible-md visible-lg center-block">
+    <div id="logo" class="col-lg-5 col-md-6 visible-lg visible-md visible-sm center-block">
       <img id="logo" class="img-responsive img-thumbnail center-block" src="img/logoHTML5.png" alt="logo HTML5">
       <p class="text-center">HTML</p>
     </div>
     <div id="titre" class="col-lg-6  col-md-6 col-sd-12 text-center">
-      <h1>Les Cheat-Sheet à la Guytou</h1>
+      <h1>Les Cheat-Sheets à la Guytou</h1>
     </div>
   </header>
   <!-- header logo + title-->
@@ -43,7 +43,7 @@
   <nav class="navbar navbar-default row ">
 
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse"><i class="fa fa-reorder"></i></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse"><i class="fa fa-html5 fa-2x logomenu"></i></button>
     </div>
     <!--create nav button in responsive-->
 
@@ -100,13 +100,7 @@
         <li>
           <code>&lt;body&gt;&lt;/body&gt;</code> englobe tout le contenu de ma page (texte, img, paragraphes, titres, ...)</li>
         <li>
-          <code>!-- #commentaire --!</code> synthaxe d'un #commentaire, non affiché sur la page.</li>
-        <li>inserer ça dans HEAD (pour que les IE inférieurs à 9 puisse le comprendre ;) )
-          <br>
-          <textarea readonly="readonly" wrap="soft">&lt;HEAD&gt;
-             &lt;!--[if lt IE 9]&gt; &lt;script src="http://github.com/aFarkas/html5shiv/blob/master/dist/html5shiv.js"&gt;&lt;/script&gt; &lt;![endif]--&gt;
-           </textarea>
-        </li>
+          <code>!-- #commentaire --!</code> synthaxe d'un #commentaire, non affiché sur la page.</li><br/>
         <li>Dans BODY:
           <ul class="list-unstyled">
             <li>
@@ -366,7 +360,7 @@
             <li><code>&lt;input type="search" ....</code> zone de saisie optimùisée pour la recherche.</li>
             <li><code>&lt;input type="checkbox"</code> puis
               <code>&lt;label&gt;</code>
-              crée une case cochable, plusieurs input à la suite sont selectionables(ajoutez checked dans l'input pour le selesctioner des le départ).
+              crée une case cochable, plusieurs input à la suite sont selectionables(ajoutez checked dans l'input pour le selectioner dès le départ).
             </li>
             <li><code>&lt;input type="radio"</code> .... bouton rond selectionnable un seul par "name" dans le input.</li>
             <li><code>&lt;p&gt;&lt;label for="biographie"&gt;Biographie&lt;/label&gt;&lt;textarea name="biographie" id="pseudo"&gt;&lt;/textarea&gt;&lt;/p&gt;</code> crée une zonne de texte pour rediger du texte.</li>
@@ -394,6 +388,17 @@
   </section>
   <!--form tags-->
 
+  <footer class="row footer">
+
+
+    <div class="gotop fixed">
+      <a href="#"><button type="button btn-default" name="button"><i class="fa fa-arrow-up fa-2x"></i></button></a>
+    </div><!--top page fixed button-->
+
+    <p class="text-center">
+       made in <a href="http://www.simplon.co">Simplon world</a> by GuillaumeM59 <i class="fa fa-github fa-2x"></i> <i class="fa fa-twitter-square fa-2x"></i>
+    </p>
+  </footer>
 
   <!--js librairys -->
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
