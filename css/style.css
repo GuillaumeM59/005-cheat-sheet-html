@@ -6,7 +6,7 @@ code {color:rgb(0, 7, 107) !important;font-weight: 600 !important;}
 
 
 /*header style*/
-#logo { width: 35%; height:35%;padding-top: 2%;}
+#imglogo { width: 35%; height:35%;padding-top: 2%;}
 #logo p {font-family: 'Share tech', sans-serif;font-size: 1.5em; display: block; vertical-align: center;}
 #titre h1 {font-family: 'Satisfy',cursive !important;
     font-weight: 700;}
