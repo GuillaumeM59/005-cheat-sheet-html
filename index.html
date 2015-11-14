@@ -87,7 +87,7 @@
       <h2><i class="fa fa-file-code-o fa-2x"></i> Synthaxe d'un fichier html:</h2>
       <ul class="list-unstyled">
         <li>
-          <img src="img/images.jpeg" alt="doctype html5"/>
+          <img class="img-responsive" src="img/images.jpeg" alt="doctype html5"/>
         </li>
         <li>
           <code>&lt;!Doctype html&gt;</code> informe le serveur du type de fichier, ici html.</li>
@@ -102,7 +102,7 @@
         <li>
           <code>!-- #commentaire --!</code> synthaxe d'un #commentaire, non affiché sur la page.</li><br/>
         <li>Dans BODY:
-          <ul class="list-unstyled">
+          <ul class="insidlist">
             <li>
               <code>&lt;header&gt;&lt;/header&gt;</code> indique qu'il s'agit de l'entête</li>
             <li>
@@ -162,7 +162,7 @@
         <li>
           <code>&lt;a&gt;texte&lt;/a&gt;</code> crée un lien sur texte.</li>
         <li>attributs de &lt;a&gt;:
-          <ul class="list-unstyled">
+          <ul class="insidlist">
             <li>
               <code>href="lienurl"</code> crée un lien hypertexte sur "texte" ouvrant la page "lienurl".</li>
             <li>
@@ -220,13 +220,13 @@
           <code>&lt;tfoot&gt;&lt;/tfoot&gt;</code> indique au nav qu'il s'agit du pied du tableau</li>
         <li>
           <code>&lt;tr&gt;&lt;/tr&gt;</code> cree une ligne de tableau.
-          <ul class="list-unstyled">
+          <ul class="insidlist">
             <li>
               <code>&lt;th&gt;&lt;/th&gt;</code> titre de colonne (dans un tr).</li>
             <li>
               <li>
                 <code>&lt;td&gt;&lt;/td&gt;</code> colonne (dans un tr).
-                <ul class="list-unstyled">
+                <ul class="insidlist">
                   <code>&lt;td colcode="2"&gt;</code> case de 2 colonnes sur la ligne.</li>
               <li>
                 <code>&lt;td rowcode="2"&gt;</code> case de 2 lignes sur la colonne.</li>
@@ -260,7 +260,7 @@
       <ul class="list-unstyled">
         <li>
           <code>&lt;img ... /&gt;</code> on insère une image, on DOIT ajouter les attributs comme ceci:
-          <ul class="list-unstyled">
+          <ul class="insidlist">
             <li>
               <code>&lt;img src="adresseimage" alt="donnéesprmoteurderech"/&gt;</code> insère une image.</li>
           </ul>
@@ -268,7 +268,7 @@
             <code>&lt;figure&gt;&lt;img ... /&gt;&lt;figcaption&gt;légende&lt;/figcaption&gt; &lt;/figure&gt;</code> indique au navigateur qu'img est une figure avec une légende.</li>
           <li>
             <code>&lt;audio controls&gt;</code> affiche un lecteur audio basique (controls affiche une barre avec les contrôles).
-            <ul class="list-unstyled">
+            <ul class="insidlist">
               <li>
                 <code>&lt;source src="fichieraudio.mp3"&gt;&lt;/source&gt;</code> essaie d'abord le.mp3 sinon</li>
               <li>
@@ -279,7 +279,7 @@
             <code>... &lt;/audio&gt;</code> ferme la balise audio</li>
           <li>
             <code>&lt;video controls poster="captureecran.png"&gt;</code> affiche un lecteur video basique avec captureecran.png en fond.
-            <ul class="list-unstyled">
+            <ul class="insidlist">
               <li>
                 <code>&lt;source src="fichiervideo.ogg"&gt;&lt;/source&gt;</code> essaie d'abord le.ogg sinon</li>
               <li>
@@ -333,7 +333,7 @@
           <code>&lt;p&gt;&lt;label for="pseudo"&gt;Pseudo&lt;/label&gt;&lt;input type="text" name="pseudo" id="pseudo"/&gt;&lt;/p&gt;</code>
           crée un paragraphe avec "Pseudo" et une barre de saisie de texte(type=text) sera enregistré dans le fichier comme "pseudo". id="" renvoie au nom du label crée avant.</li>
         <li>Input peut aussi contenir:
-          <ul class="list-unstyled">
+          <ul class="insidlist">
             <li>
               <code>size="6"</code> longueur de la barre de saisie.</li>
             <li>
@@ -345,7 +345,7 @@
           </ul>
         </li>
         <li>Différents types de input:
-          <ul class="list-unstyled">
+          <ul class="insidlist">
             <li>
               <code>&lt;input type="email" ....</code> zone de saisie reconnue pour email</li>
             <li>
@@ -368,9 +368,9 @@
           </ul>
         </li>
         <li><code>&lt;p&gt;&lt;label for="idname"&gt;selectioner parmi&lt;/label&gt;&lt;select name="nomretourné" id="idname"&gt;</code> crée une liste déroulante selectionnable.
-          <ul class="list-unstyled">
+          <ul class="insidlist">
             <li><code>&lt;optgroup label="groupe1"&gt;</code> crée un groupe non selectionnable contenant:
-              <ul class="list-unstyled">
+              <ul class="insidlist">
                 <li><code>&lt;option value="valeur1"&gt;Valeur1&lt;/option&gt;</code> crée une valeur selectionnable.</li>
                 <li><code>&lt;option value="valeur2"&gt;Valeur2&lt;/option&gt;</code> une seconde</li>
                 <li><code>... &lt;/optgroup&gt;</code> à repeter comme voulu.</li>
