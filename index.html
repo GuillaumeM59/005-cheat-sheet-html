@@ -64,7 +64,7 @@
   <!-- main navbar-->
 
 
-  <section id="structure" class="row">
+  <div id="structure" class="row">
     <aside class="col-lg-2 col-md-2 visible-lg visible-md">
       <i class="fa fa-html5 fa-3x fa-border"></i>
       <ul class="list-unstyled ">
@@ -118,14 +118,15 @@
             </li>
             <li>
               <code>&lt;footer&gt;&lt;/footer&gt;</code> c'est le pied de page</li>
-          </ul>
-    </section>
-  </section>
+          </ul></li>
+        </ul>
+      </section>
+  </div>
   <!-- doctype and semantic tags for html structure-->
 
 
 
-  <section id="texttag" class="row">
+  <div id="texttag" class="row">
 
     <aside class="col-lg-2 col-md-2 visible-lg visible-md">
     <i class="fa fa-html5 fa-3x fa-border"></i>
@@ -181,11 +182,11 @@
           <code>&lt;balise id="marquage"&gt;&lt;/balise&gt;</code> permet de marquer une importance sur la balise (permettant d'y revenir avec un lien par ex). on appele ce marquage un ancre</li>
       </ul>
     </section>
-  </section>
+  </div>
   <!-- text and links-->
 
 
-  <section id="table" class="row">
+  <div id="table" class="row">
     <aside class="col-lg-2 col-md-2 visible-lg visible-md">
     <i class="fa fa-html5 fa-3x fa-border"></i>
       <ul class="list-unstyled ">
@@ -224,24 +225,23 @@
             <li>
               <code>&lt;th&gt;&lt;/th&gt;</code> titre de colonne (dans un tr).</li>
             <li>
-              <li>
                 <code>&lt;td&gt;&lt;/td&gt;</code> colonne (dans un tr).
                 <ul class="insidlist">
-                  <code>&lt;td colcode="2"&gt;</code> case de 2 colonnes sur la ligne.</li>
-              <li>
-                <code>&lt;td rowcode="2"&gt;</code> case de 2 lignes sur la colonne.</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
+                  <li><code>&lt;td colcode="2"&gt;</code> case de 2 colonnes sur la ligne.</li>
+                  <li>
+                    <code>&lt;td rowcode="2"&gt;</code> case de 2 lignes sur la colonne.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
       </ul>
     </section>
-  </section>
+  </div>
   <!--table section-->
 
 
 
-  <section id="medias" class="row">
+  <div id="medias" class="row">
     <aside class="col-lg-2 col-md-2 visible-lg visible-md">
     <i class="fa fa-html5 fa-3x fa-border"></i>
       <ul class="list-unstyled ">
@@ -264,40 +264,40 @@
             <li>
               <code>&lt;img src="adresseimage" alt="donnéesprmoteurderech"/&gt;</code> insère une image.</li>
           </ul>
-          <li>
-            <code>&lt;figure&gt;&lt;img ... /&gt;&lt;figcaption&gt;légende&lt;/figcaption&gt; &lt;/figure&gt;</code> indique au navigateur qu'img est une figure avec une légende.</li>
-          <li>
-            <code>&lt;audio controls&gt;</code> affiche un lecteur audio basique (controls affiche une barre avec les contrôles).
-            <ul class="insidlist">
-              <li>
-                <code>&lt;source src="fichieraudio.mp3"&gt;&lt;/source&gt;</code> essaie d'abord le.mp3 sinon</li>
-              <li>
-                <code>&lt;source src="fichieraudio.flac"&gt;&lt;/source&gt;</code> puis essaie le .flac</li>
-            </ul>
-          </li>
-          <li>
-            <code>... &lt;/audio&gt;</code> ferme la balise audio</li>
-          <li>
-            <code>&lt;video controls poster="captureecran.png"&gt;</code> affiche un lecteur video basique avec captureecran.png en fond.
-            <ul class="insidlist">
-              <li>
-                <code>&lt;source src="fichiervideo.ogg"&gt;&lt;/source&gt;</code> essaie d'abord le.ogg sinon</li>
-              <li>
-                <code>&lt;source src="fichiervideo.mp4"&gt;&lt;/source&gt;</code> essaie le .mp4</li>
-            </ul>
-          </li>
-          <li>
-            <code>... &lt;/video&gt;</code> ferme la balise video</li>
+        </li>
+        <li>
+          <code>&lt;figure&gt;&lt;img ... /&gt;&lt;figcaption&gt;légende&lt;/figcaption&gt; &lt;/figure&gt;</code> indique au navigateur qu'img est une figure avec une légende.</li>
+        <li>
+          <code>&lt;audio controls&gt;</code> affiche un lecteur audio basique (controls affiche une barre avec les contrôles).
+          <ul class="insidlist">
+            <li>
+              <code>&lt;source src="fichieraudio.mp3"&gt;&lt;/source&gt;</code> essaie d'abord le.mp3 sinon</li>
+            <li>
+              <code>&lt;source src="fichieraudio.flac"&gt;&lt;/source&gt;</code> puis essaie le .flac</li>
+          </ul>
+        </li>
+        <li>
+          <code>... &lt;/audio&gt;</code> ferme la balise audio</li>
+        <li>
+          <code>&lt;video controls poster="captureecran.png"&gt;</code> affiche un lecteur video basique avec captureecran.png en fond.
+          <ul class="insidlist">
+            <li>
+              <code>&lt;source src="fichiervideo.ogg"&gt;&lt;/source&gt;</code> essaie d'abord le.ogg sinon</li>
+            <li>
+              <code>&lt;source src="fichiervideo.mp4"&gt;&lt;/source&gt;</code> essaie le .mp4</li>
+          </ul>
+        </li>
+        <li>
+          <code>... &lt;/video&gt;</code> ferme la balise video</li>
       </ul>
-      </li>
     </section>
-  </section>
+  </div>
   <!--medias tags-->
 
 
 
 
-  <section id="formular" class="row">
+  <div id="formular" class="row">
     <aside class="col-lg-2 col-md-2 visible-lg visible-md">
       <i class="fa fa-html5 fa-3x fa-border" ></i>
       <ul class="list-unstyled ">
@@ -385,7 +385,7 @@
           <code>&lt;/form&gt;</code> ferme la balise formulaire.</li>
       </ul>
     </section>
-  </section>
+  </div>
   <!--form tags-->
 
 
@@ -393,11 +393,11 @@
   <footer class="row footer">
 
     <div class="gotop fixed">
-      <a href="#"><button type="button btn-default" name="button"><i class="fa fa-arrow-up fa-2x"></i></button></a>
+      <a href="#"><button class="btn btn-default" type="button" name="button"><i class="fa fa-arrow-up fa-2x"></i></button></a>
     </div><!--top page fixed button-->
 
 
-    <section  id="footer" class="col-centered col-lg-6 col-lg-offset-3 col-md-8 col-md-2 col-sd-10 col-sd-offset-1">
+    <section  class="col-centered col-lg-6 col-lg-offset-3 col-md-8 col-md-2 col-sd-10 col-sd-offset-1">
     <p class="text-center">
        made in <a href="http://www.simplon.co">Simplon world</a> by GuillaumeM59 <a href="https://github.com/GuillaumeM59" ><i class="fa fa-github fa-2x"></i></a> <a href="https://twitter.com/guillaume_m59"><i class="fa fa-twitter-square fa-2x"></i></a>
     </p>
