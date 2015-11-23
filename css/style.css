@@ -2,7 +2,7 @@
 body {font-weight: 500; font-size: 1.5em;}
 ul li {text-decoration: none !important;}
 .insidlist {list-style: none; padding-left: 2em;}
-code {color:rgb(0, 7, 107) !important;font-weight: 600 !important;}
+code {color:rgb(88, 130, 201)  !important;font-weight: 600 !important;}
 
 
 /*header style*/
@@ -20,7 +20,7 @@ code {color:rgb(0, 7, 107) !important;font-weight: 600 !important;}
         font-size: 1.2em;}
 .navbar-default .navbar-nav > li > a {color: #000 !important;}
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {color: rgb(224, 81, 0) !important;}
-div .logomenu  { color: rgb(224, 81, 0); padding: 5px;background-color: rgb(236, 235, 235); border: 2px solid} /*html5 menu button in orange*/
+div .logomenu  { color: rgb(224, 81, 0); padding: 5px;background-color: rgb(255, 255, 255); border: 2px solid} /*html5 menu button in orange*/
 
 
 
@@ -39,7 +39,7 @@ footer .fixed {position: fixed; bottom:10px; left:10px;}
 footer .gotop a { text-decoration: none; color: rgb(153, 153, 153);}
 
 /*footer style*/
-footer {background-image:linear-gradient(rgb(255, 255, 255), rgb(255, 216, 171)); border-radius: 10% 10% 0 0;}
+footer {background-image:linear-gradient(rgb(255, 216, 171), rgb(255, 255, 255)); }
 footer p { line-height: 5em;}
 footer a {text-decoration: none; color:rgb(77, 77, 77);}
 .fa-twitter-square {color:rgb(68, 219, 212)}
